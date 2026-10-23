@@ -46,6 +46,7 @@ pnpm test                   # Vitest in every package
 pnpm lint                   # Prettier check + ESLint in every package
 pnpm typecheck              # tsc / svelte-check in every package
 pnpm format                 # Prettier write
+pnpm data:import            # rebuild data/rules.db from Open5e srd-2024 + data/seed/
 
 pnpm --filter @dnd/web dev  # one package (@dnd/web, @dnd/mcp, @dnd/shared)
 
