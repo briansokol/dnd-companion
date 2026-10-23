@@ -39,3 +39,11 @@ On the Mac, from a fresh clone:
    ```
 
    Open the URL Vite prints for the web app (http://localhost:5173 by default).
+
+## Deploying to Firefly
+
+Firefly runs the app with docker compose against Ollama on the host. After the first-time setup in [the Firefly runbook](docs/runbooks/firefly.md), deploy or update with:
+
+```sh
+./scripts/deploy-firefly.sh
+```

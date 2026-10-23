@@ -48,7 +48,12 @@ pnpm typecheck              # tsc / svelte-check in every package
 pnpm format                 # Prettier write
 
 pnpm --filter @dnd/web dev  # one package (@dnd/web, @dnd/mcp, @dnd/shared)
+
+docker compose --env-file env/firefly.env up --build   # Firefly stack (also runs on Docker Desktop)
+./scripts/deploy-firefly.sh                            # pull, build, start, wait for health
 ```
+
+`pnpm test` and `pnpm typecheck` build `@dnd/shared` first, because other packages import its `dist/`. One `Dockerfile` builds every service, with a target per service (`web`, `mcp`). Firefly setup and deploys: `docs/runbooks/firefly.md`.
 
 ESLint and Prettier configs live at the root and cover every package. CI (`.github/workflows/ci.yml`) runs lint, typecheck and test on every PR. pnpm only runs dependency build scripts listed under `allowBuilds` in `pnpm-workspace.yaml`.
 
