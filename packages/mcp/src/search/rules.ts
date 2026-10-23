@@ -72,24 +72,22 @@ export async function searchRules(
         ).map((r) => r.id);
 
   let vecIds: number[] | null = null;
-  const unusable = vectorProblem(db, model);
-  if (unusable) {
-    warn(`Rules search is keyword-only: ${unusable}`);
-  } else {
-    try {
-      const [vector] = await options.embed([`${queryPrefix(model)}${question}`]);
-      vecIds = (
-        db
-          .prepare(
-            `SELECT chunk_id FROM rules_vec
+  try {
+    // Inside the try: without sqlite-vec loaded, reading rules_vec throws "no such module".
+    const unusable = vectorProblem(db, model);
+    if (unusable) throw new Error(unusable);
+    const [vector] = await options.embed([`${queryPrefix(model)}${question}`]);
+    vecIds = (
+      db
+        .prepare(
+          `SELECT chunk_id FROM rules_vec
              WHERE embedding MATCH ? AND k = ${CANDIDATES} AND audience IN ${audienceIn}
              ORDER BY distance`
-          )
-          .all(new Float32Array(vector!), ...audiences) as { chunk_id: number }[]
-      ).map((r) => r.chunk_id);
-    } catch (error) {
-      warn(`Rules search is keyword-only: ${error instanceof Error ? error.message : error}`);
-    }
+        )
+        .all(new Float32Array(vector!), ...audiences) as { chunk_id: number }[]
+    ).map((r) => r.chunk_id);
+  } catch (error) {
+    warn(`Rules search is keyword-only: ${error instanceof Error ? error.message : error}`);
   }
 
   const ranked = new Map<number, { score: number; ftsRank: number }>();

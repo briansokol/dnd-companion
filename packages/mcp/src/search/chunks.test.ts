@@ -16,13 +16,15 @@ describe('chunkMarkdown', () => {
   it('merges a short parent intro into its first subsection under the parent heading', () => {
     const md = `## Cover\n\nShort intro.\n\n### Half Cover\n\n${'h'.repeat(400)}`;
     expect(chunkMarkdown(md)).toEqual([
-      { heading: 'Cover', text: `Short intro.\n\n${'h'.repeat(400)}` }
+      { heading: 'Cover', text: `Short intro.\n\n**Half Cover**\n\n${'h'.repeat(400)}` }
     ]);
   });
 
-  it('merges a short trailing piece into the previous one', () => {
+  it('merges a short trailing piece into the previous one and keeps its heading', () => {
     const md = `## A\n\n${'a'.repeat(400)}\n\n## B\n\nTiny.`;
-    expect(chunkMarkdown(md)).toEqual([{ heading: 'A', text: `${'a'.repeat(400)}\n\nTiny.` }]);
+    expect(chunkMarkdown(md)).toEqual([
+      { heading: 'A', text: `${'a'.repeat(400)}\n\n**B**\n\nTiny.` }
+    ]);
   });
 
   it('keeps a short heading-less row as one piece', () => {

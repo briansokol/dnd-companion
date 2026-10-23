@@ -43,11 +43,12 @@ export function chunkMarkdown(markdown: string): Piece[] {
     if (length(piece.blocks) >= MIN_CHARS) {
       i++;
     } else if (next && isParent(piece.heading, next.heading)) {
-      next.blocks.unshift(...piece.blocks);
+      // The merged piece takes the parent heading, so the child's title moves into its text.
+      next.blocks.unshift(...piece.blocks, ...label(next.heading, piece.heading));
       next.heading = piece.heading;
       pieces.splice(i, 1);
     } else if (prev) {
-      prev.blocks.push(...piece.blocks);
+      prev.blocks.push(...label(piece.heading, prev.heading), ...piece.blocks);
       pieces.splice(i, 1);
     } else {
       i++;
@@ -57,6 +58,11 @@ export function chunkMarkdown(markdown: string): Piece[] {
   return pieces
     .filter((p) => p.blocks.length > 0)
     .flatMap((p) => splitBlocks(p.blocks).map((text) => ({ heading: p.heading, text })));
+}
+
+/** A bold title line for a heading merged under another, so its words stay searchable. */
+function label(heading: string, under: string): string[] {
+  return heading === '' || heading === under ? [] : [`**${heading.split(' › ').at(-1)}**`];
 }
 
 /** Groups blocks into runs of at most MAX_CHARS; a single longer block stays whole. */

@@ -1,4 +1,7 @@
 import Database from 'better-sqlite3';
+import { mkdtempSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
 import { beforeAll, describe, expect, it } from 'vitest';
 import { embedChunks, loadVec, type Embedder } from '../embeddings/embed.js';
 import { fakeEmbedder, rulesDb } from '../testing/rules-db.js';
@@ -131,6 +134,13 @@ describe('searchRules', () => {
         throw new Error('Ollama is not reachable');
       };
       await expectFallback(db, { embed: broken });
+    });
+
+    it('when the caller did not load sqlite-vec', async () => {
+      const path = join(mkdtempSync(join(tmpdir(), 'dnd-rules-')), 'rules.db');
+      await db.backup(path);
+      const unloaded = new Database(path);
+      await expectFallback(unloaded, {});
     });
   });
 
