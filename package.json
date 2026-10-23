@@ -15,7 +15,8 @@
     "format": "prettier --write .",
     "setup:mac": "./scripts/setup-mac.sh",
     "data:import": "pnpm --filter @dnd/shared build && pnpm --filter @dnd/mcp data:import",
-    "data:embed": "pnpm --filter @dnd/shared build && pnpm --filter @dnd/mcp data:embed"
+    "data:embed": "pnpm --filter @dnd/shared build && pnpm --filter @dnd/mcp data:embed",
+    "data:spotcheck": "pnpm --filter @dnd/shared build && pnpm --filter @dnd/mcp data:spotcheck"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",

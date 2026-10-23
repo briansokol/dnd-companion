@@ -20,3 +20,4 @@ if (result.unmappedRulesets.length > 0) {
     `Rulesets missing from RULESET_AUDIENCE, imported as dm: ${result.unmappedRulesets.join(', ')}`
   );
 }
+console.log('Next: pnpm data:embed');

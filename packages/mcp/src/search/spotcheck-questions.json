@@ -1,0 +1,44 @@
+[
+  {
+    "question": "What does having advantage mean?",
+    "expected": ["rules_sections:d20-tests_advantage-disadvantage"]
+  },
+  {
+    "question": "Can I grapple while prone?",
+    "expected": ["conditions:prone", "conditions:grappled"]
+  },
+  { "question": "How does cover work?", "expected": ["rules_sections:combat_cover"] },
+  {
+    "question": "What happens when I drop to 0 hit points?",
+    "expected": ["rules_sections:damage-and-healing_dropping-to-zero-hit-points"]
+  },
+  {
+    "question": "Do critical hits double the damage?",
+    "expected": ["rules_sections:damage-and-healing_critical-hits"]
+  },
+  {
+    "question": "Can I attack something I can't see?",
+    "expected": ["rules_sections:combat_unseen-attackers-and-target", "conditions:blinded"]
+  },
+  {
+    "question": "When do I get an opportunity attack?",
+    "expected": ["rules_sections:combat_melee-attacks"]
+  },
+  {
+    "question": "Do temporary hit points stack?",
+    "expected": ["rules_sections:damage-and-healing_temporary-hit-points"]
+  },
+  {
+    "question": "Is it harder to shoot at someone right next to me?",
+    "expected": ["rules_sections:combat_ranged-attacks"]
+  },
+  {
+    "question": "What if I'm resistant and vulnerable to the same damage?",
+    "expected": ["rules_sections:damage-and-healing_resistance-and-vulnerability"]
+  },
+  { "question": "What does being frightened do?", "expected": ["conditions:frightened"] },
+  {
+    "question": "How far can we travel in a day?",
+    "expected": ["rules_sections:exploration_travel"]
+  }
+]
