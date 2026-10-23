@@ -4,6 +4,7 @@ import { tmpdir } from 'node:os';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { describe, expect, it } from 'vitest';
+import { searchNames } from '../search/names.js';
 import { RULESET_AUDIENCE, runImport, type ImportOptions } from './importer.js';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
@@ -195,6 +196,24 @@ describe('runImport', () => {
     expect(meta.source).toBe('srd-2024');
     expect(JSON.parse(meta.counts!)).toEqual(result.counts);
     expect(JSON.parse(meta.unmapped_rulesets!)).toEqual([]);
+  });
+
+  it('indexes every table for name search', async () => {
+    const { dbPath } = options();
+    const result = await runImport(options({ dbPath }));
+
+    const db = new Database(dbPath, { readonly: true });
+    try {
+      expect(searchNames(db, 'acid arrow', { audience: 'player' }).matches[0]).toMatchObject({
+        kind: 'spells',
+        slug: 'acid-arrow',
+        match: 'exact'
+      });
+    } finally {
+      db.close();
+    }
+    const total = Object.values(result.counts).reduce((a, b) => a + b, 0);
+    expect(query(dbPath, 'SELECT COUNT(*) AS n FROM name_index')).toEqual([{ n: total }]);
   });
 
   it('rebuilds from scratch on every run', async () => {
