@@ -9,9 +9,9 @@
   "scripts": {
     "dev": "pnpm -r --parallel dev",
     "build": "pnpm -r build",
-    "test": "pnpm -r test",
+    "test": "pnpm --filter @dnd/shared build && pnpm -r test",
     "lint": "prettier --check . && pnpm -r lint",
-    "typecheck": "pnpm -r typecheck",
+    "typecheck": "pnpm --filter @dnd/shared build && pnpm -r typecheck",
     "format": "prettier --write .",
     "setup:mac": "./scripts/setup-mac.sh"
   },
