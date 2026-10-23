@@ -10,7 +10,8 @@
     "lint": "eslint .",
     "typecheck": "tsc",
     "test": "vitest run",
-    "data:import": "tsx src/importer/main.ts"
+    "data:import": "tsx src/importer/main.ts",
+    "data:embed": "tsx src/embeddings/main.ts"
   },
   "devDependencies": {
     "@types/better-sqlite3": "^9.6.0",

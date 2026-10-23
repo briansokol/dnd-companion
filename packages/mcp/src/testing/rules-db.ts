@@ -1,4 +1,5 @@
 import Database from 'better-sqlite3';
+import type { Embedder } from '../embeddings/embed.js';
 import type { Audience } from '../importer/importer.js';
 import { buildRulesChunks } from '../search/chunks.js';
 
@@ -54,4 +55,18 @@ export function rulesDb(rows: {
   }
   buildRulesChunks(db);
   return db;
+}
+
+/** A bag-of-words embedder over `vocab` (substring counts), recording every call's texts. */
+export function fakeEmbedder(vocab: string[]): Embedder & { calls: string[][] } {
+  const calls: string[][] = [];
+  const embed = async (texts: string[]) => {
+    calls.push(texts);
+    return texts.map((t) => {
+      const lower = t.toLowerCase();
+      // The constant component keeps every vector non-zero for cosine distance.
+      return [...vocab.map((w) => lower.split(w).length - 1), 0.01];
+    });
+  };
+  return Object.assign(embed, { calls });
 }

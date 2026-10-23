@@ -14,7 +14,8 @@
     "typecheck": "pnpm --filter @dnd/shared build && pnpm -r typecheck",
     "format": "prettier --write .",
     "setup:mac": "./scripts/setup-mac.sh",
-    "data:import": "pnpm --filter @dnd/shared build && pnpm --filter @dnd/mcp data:import"
+    "data:import": "pnpm --filter @dnd/shared build && pnpm --filter @dnd/mcp data:import",
+    "data:embed": "pnpm --filter @dnd/shared build && pnpm --filter @dnd/mcp data:embed"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
