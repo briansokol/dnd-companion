@@ -1,0 +1,16 @@
+node_modules/
+.pnpm-store/
+.svelte-kit/
+build/
+dist/
+coverage/
+.env
+.env.*
+!.env.example
+data/*
+!data/seed/
+*.db
+*.db-shm
+*.db-wal
+.DS_Store
+.worktrees/
