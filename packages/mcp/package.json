@@ -1,19 +1,19 @@
 {
-	"name": "@dnd/mcp",
-	"private": true,
-	"version": "0.0.1",
-	"type": "module",
-	"scripts": {
-		"dev": "tsx watch src/index.ts",
-		"build": "tsc -p tsconfig.build.json",
-		"start": "node dist/index.js",
-		"lint": "eslint .",
-		"typecheck": "tsc",
-		"test": "vitest run"
-	},
-	"devDependencies": {
-		"@types/node": "^24",
-		"tsx": "^4.23.15",
-		"vitest": "^4.1.8"
-	}
+  "name": "@dnd/mcp",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc -p tsconfig.build.json",
+    "start": "node dist/index.js",
+    "lint": "eslint .",
+    "typecheck": "tsc",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "^24",
+    "tsx": "^4.23.15",
+    "vitest": "^4.1.8"
+  }
 }
