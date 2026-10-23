@@ -1,0 +1,3821 @@
+{
+  "https://api.open5e.com/v2/spells/?document__key=srd-2024&limit=2&page=2": {
+    "count": 339,
+    "next": null,
+    "previous": "https://api.open5e.com/v2/spells/?document__key=srd-2024&limit=2",
+    "results": [
+      {
+        "key": "srd-2024_aid",
+        "document": {
+          "name": "System Reference Document 5.2",
+          "key": "srd-2024",
+          "type": "SOURCE",
+          "display_name": "5e 2024 Rules",
+          "publisher": {
+            "name": "Wizards of the Coast",
+            "key": "wizards-of-the-coast"
+          },
+          "gamesystem": {
+            "name": "5th Edition 2024",
+            "key": "5e-2024"
+          },
+          "permalink": "https://dnd.wizards.com/resources/systems-reference-document"
+        },
+        "casting_options": [
+          {
+            "type": "slot_level_3",
+            "damage_roll": null,
+            "target_count": null,
+            "duration": null,
+            "range": null,
+            "concentration": null,
+            "shape_size": null,
+            "desc": "Each target's Hit Points increase by 5."
+          },
+          {
+            "type": "slot_level_4",
+            "damage_roll": null,
+            "target_count": null,
+            "duration": null,
+            "range": null,
+            "concentration": null,
+            "shape_size": null,
+            "desc": "Each target's Hit Points increase by 10."
+          },
+          {
+            "type": "slot_level_5",
+            "damage_roll": null,
+            "target_count": null,
+            "duration": null,
+            "range": null,
+            "concentration": null,
+            "shape_size": null,
+            "desc": "Each target's Hit Points increase by 15."
+          },
+          {
+            "type": "slot_level_6",
+            "damage_roll": null,
+            "target_count": null,
+            "duration": null,
+            "range": null,
+            "concentration": null,
+            "shape_size": null,
+            "desc": "Each target's Hit Points increase by 20."
+          },
+          {
+            "type": "slot_level_7",
+            "damage_roll": null,
+            "target_count": null,
+            "duration": null,
+            "range": null,
+            "concentration": null,
+            "shape_size": null,
+            "desc": "Each target's Hit Points increase by 25."
+          },
+          {
+            "type": "slot_level_8",
+            "damage_roll": null,
+            "target_count": null,
+            "duration": null,
+            "range": null,
+            "concentration": null,
+            "shape_size": null,
+            "desc": "Each target's Hit Points increase by 30."
+          },
+          {
+            "type": "slot_level_9",
+            "damage_roll": null,
+            "target_count": null,
+            "duration": null,
+            "range": null,
+            "concentration": null,
+            "shape_size": null,
+            "desc": "Each target's Hit Points increase by 35."
+          }
+        ],
+        "school": {
+          "name": "Abjuration",
+          "key": "abjuration"
+        },
+        "classes": [
+          {
+            "name": "Bard",
+            "key": "srd-2024_bard"
+          },
+          {
+            "name": "Cleric",
+            "key": "srd-2024_cleric"
+          },
+          {
+            "name": "Druid",
+            "key": "srd-2024_druid"
+          },
+          {
+            "name": "Paladin",
+            "key": "srd-2024_paladin"
+          },
+          {
+            "name": "Ranger",
+            "key": "srd-2024_ranger"
+          }
+        ],
+        "range_unit": "feet",
+        "shape_size_unit": "feet",
+        "name": "Aid",
+        "desc": "Choose up to three creatures within range. Each target's Hit Point maximum and current Hit Points increase by 5 for the duration.",
+        "level": 2,
+        "higher_level": "Each target's Hit Points increase by 5 for each spell slot level above 2.",
+        "target_type": "creature",
+        "range_text": "30 feet",
+        "range": 30,
+        "ritual": false,
+        "casting_time": "action",
+        "reaction_condition": null,
+        "verbal": true,
+        "somatic": true,
+        "material": true,
+        "material_specified": "a strip of white cloth",
+        "material_cost": null,
+        "material_consumed": false,
+        "target_count": 1,
+        "saving_throw_ability": "",
+        "attack_roll": false,
+        "damage_roll": "",
+        "damage_types": [],
+        "duration": "8 hours",
+        "shape_type": null,
+        "shape_size": null,
+        "concentration": false,
+        "crossreferences": {
+          "to": []
+        }
+      },
+      {
+        "key": "srd-2024_alarm",
+        "document": {
+          "name": "System Reference Document 5.2",
+          "key": "srd-2024",
+          "type": "SOURCE",
+          "display_name": "5e 2024 Rules",
+          "publisher": {
+            "name": "Wizards of the Coast",
+            "key": "wizards-of-the-coast"
+          },
+          "gamesystem": {
+            "name": "5th Edition 2024",
+            "key": "5e-2024"
+          },
+          "permalink": "https://dnd.wizards.com/resources/systems-reference-document"
+        },
+        "casting_options": [],
+        "school": {
+          "name": "Abjuration",
+          "key": "abjuration"
+        },
+        "classes": [
+          {
+            "name": "Ranger",
+            "key": "srd-2024_ranger"
+          },
+          {
+            "name": "Wizard",
+            "key": "srd-2024_wizard"
+          }
+        ],
+        "range_unit": "feet",
+        "shape_size_unit": "feet",
+        "name": "Alarm",
+        "desc": "You set an alarm against intrusion. Choose a door, a window, or an area within range that is no larger than a 20-foot Cube. Until the spell ends, an alarm alerts you whenever a creature touches or enters the warded area. When you cast the spell, you can designate creatures that won't set off the alarm. You also choose whether the alarm is audible or mental:\n\n**Audible Alarm.** The alarm produces the sound of a handbell for 10 seconds within 60 feet of the warded area.\n\n**Mental Alarm.** You are alerted by a mental ping if you are within 1 mile of the warded area. This ping awakens you if you're asleep.",
+        "level": 1,
+        "higher_level": "",
+        "target_type": "creature",
+        "range_text": "30 feet",
+        "range": 30,
+        "ritual": true,
+        "casting_time": "1minute",
+        "reaction_condition": null,
+        "verbal": true,
+        "somatic": true,
+        "material": true,
+        "material_specified": "a bell and silver wire",
+        "material_cost": null,
+        "material_consumed": false,
+        "target_count": 1,
+        "saving_throw_ability": "",
+        "attack_roll": false,
+        "damage_roll": "",
+        "damage_types": [],
+        "duration": "8 hours",
+        "shape_type": "cube",
+        "shape_size": 20,
+        "concentration": false,
+        "crossreferences": {
+          "to": []
+        }
+      }
+    ]
+  },
+  "https://api.open5e.com/v2/spells/?document__key=srd-2024&limit=2": {
+    "count": 339,
+    "next": "https://api.open5e.com/v2/spells/?document__key=srd-2024&limit=2&page=2",
+    "previous": null,
+    "results": [
+      {
+        "key": "srd-2024_acid-arrow",
+        "document": {
+          "name": "System Reference Document 5.2",
+          "key": "srd-2024",
+          "type": "SOURCE",
+          "display_name": "5e 2024 Rules",
+          "publisher": {
+            "name": "Wizards of the Coast",
+            "key": "wizards-of-the-coast"
+          },
+          "gamesystem": {
+            "name": "5th Edition 2024",
+            "key": "5e-2024"
+          },
+          "permalink": "https://dnd.wizards.com/resources/systems-reference-document"
+        },
+        "casting_options": [
+          {
+            "type": "slot_level_3",
+            "damage_roll": "5d4",
+            "target_count": null,
+            "duration": null,
+            "range": null,
+            "concentration": null,
+            "shape_size": null,
+            "desc": null
+          },
+          {
+            "type": "slot_level_4",
+            "damage_roll": "6d4",
+            "target_count": null,
+            "duration": null,
+            "range": null,
+            "concentration": null,
+            "shape_size": null,
+            "desc": null
+          },
+          {
+            "type": "slot_level_5",
+            "damage_roll": "7d4",
+            "target_count": null,
+            "duration": null,
+            "range": null,
+            "concentration": null,
+            "shape_size": null,
+            "desc": null
+          },
+          {
+            "type": "slot_level_6",
+            "damage_roll": "8d4",
+            "target_count": null,
+            "duration": null,
+            "range": null,
+            "concentration": null,
+            "shape_size": null,
+            "desc": null
+          },
+          {
+            "type": "slot_level_7",
+            "damage_roll": "9d4",
+            "target_count": null,
+            "duration": null,
+            "range": null,
+            "concentration": null,
+            "shape_size": null,
+            "desc": null
+          },
+          {
+            "type": "slot_level_8",
+            "damage_roll": "10d4",
+            "target_count": null,
+            "duration": null,
+            "range": null,
+            "concentration": null,
+            "shape_size": null,
+            "desc": null
+          },
+          {
+            "type": "slot_level_9",
+            "damage_roll": "11d4",
+            "target_count": null,
+            "duration": null,
+            "range": null,
+            "concentration": null,
+            "shape_size": null,
+            "desc": null
+          }
+        ],
+        "school": {
+          "name": "Evocation",
+          "key": "evocation"
+        },
+        "classes": [
+          {
+            "name": "Wizard",
+            "key": "srd-2024_wizard"
+          }
+        ],
+        "range_unit": "feet",
+        "shape_size_unit": "feet",
+        "name": "Acid Arrow",
+        "desc": "A shimmering green arrow streaks toward a target within range and bursts in a spray of acid. Make a ranged spell attack against the target. On a hit, the target takes 4d4 Acid damage and 2d4 Acid damage at the end of its next turn. On a miss, the arrow splashes the target with acid for half as much of the initial damage only.",
+        "level": 2,
+        "higher_level": "The damage (both initial and later) increases by 1d4 for each spell slot level above 2.",
+        "target_type": "creature",
+        "range_text": "90 feet",
+        "range": 90,
+        "ritual": false,
+        "casting_time": "action",
+        "reaction_condition": null,
+        "verbal": true,
+        "somatic": true,
+        "material": true,
+        "material_specified": "powdered rhubarb leaf",
+        "material_cost": null,
+        "material_consumed": false,
+        "target_count": 1,
+        "saving_throw_ability": "",
+        "attack_roll": true,
+        "damage_roll": "4d4",
+        "damage_types": ["acid"],
+        "duration": "instantaneous",
+        "shape_type": null,
+        "shape_size": null,
+        "concentration": false,
+        "crossreferences": {
+          "to": []
+        }
+      },
+      {
+        "key": "srd-2024_acid-splash",
+        "document": {
+          "name": "System Reference Document 5.2",
+          "key": "srd-2024",
+          "type": "SOURCE",
+          "display_name": "5e 2024 Rules",
+          "publisher": {
+            "name": "Wizards of the Coast",
+            "key": "wizards-of-the-coast"
+          },
+          "gamesystem": {
+            "name": "5th Edition 2024",
+            "key": "5e-2024"
+          },
+          "permalink": "https://dnd.wizards.com/resources/systems-reference-document"
+        },
+        "casting_options": [
+          {
+            "type": "player_level_5",
+            "damage_roll": "2d6",
+            "target_count": null,
+            "duration": null,
+            "range": null,
+            "concentration": null,
+            "shape_size": null,
+            "desc": null
+          },
+          {
+            "type": "player_level_11",
+            "damage_roll": "3d6",
+            "target_count": null,
+            "duration": null,
+            "range": null,
+            "concentration": null,
+            "shape_size": null,
+            "desc": null
+          },
+          {
+            "type": "player_level_17",
+            "damage_roll": "4d6",
+            "target_count": null,
+            "duration": null,
+            "range": null,
+            "concentration": null,
+            "shape_size": null,
+            "desc": null
+          }
+        ],
+        "school": {
+          "name": "Evocation",
+          "key": "evocation"
+        },
+        "classes": [
+          {
+            "name": "Sorcerer",
+            "key": "srd-2024_sorcerer"
+          },
+          {
+            "name": "Wizard",
+            "key": "srd-2024_wizard"
+          }
+        ],
+        "range_unit": "feet",
+        "shape_size_unit": "feet",
+        "name": "Acid Splash",
+        "desc": "You create an acidic bubble at a point within range, where it explodes in a 5-foot-radius Sphere. Each creature in that Sphere must succeed on a Dexterity saving throw or take 1d6 Acid damage.",
+        "level": 0,
+        "higher_level": "The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).",
+        "target_type": "creature",
+        "range_text": "60 feet",
+        "range": 60,
+        "ritual": false,
+        "casting_time": "action",
+        "reaction_condition": null,
+        "verbal": true,
+        "somatic": true,
+        "material": false,
+        "material_specified": "",
+        "material_cost": null,
+        "material_consumed": false,
+        "target_count": 1,
+        "saving_throw_ability": "dexterity",
+        "attack_roll": false,
+        "damage_roll": "1d6",
+        "damage_types": ["acid"],
+        "duration": "instantaneous",
+        "shape_type": "sphere",
+        "shape_size": 5,
+        "concentration": false,
+        "crossreferences": {
+          "to": []
+        }
+      }
+    ]
+  },
+  "https://api.open5e.com/v2/creatures/?document__key=srd-2024&limit=2": {
+    "count": 331,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "key": "srd-2024_aboleth",
+        "name": "Aboleth",
+        "document": {
+          "name": "System Reference Document 5.2",
+          "key": "srd-2024",
+          "type": "SOURCE",
+          "display_name": "5e 2024 Rules",
+          "publisher": {
+            "name": "Wizards of the Coast",
+            "key": "wizards-of-the-coast"
+          },
+          "gamesystem": {
+            "name": "5th Edition 2024",
+            "key": "5e-2024"
+          },
+          "permalink": "https://dnd.wizards.com/resources/systems-reference-document"
+        },
+        "type": {
+          "name": "Aberration",
+          "key": "aberration"
+        },
+        "size": {
+          "name": "Large",
+          "key": "large"
+        },
+        "challenge_rating": 10.0,
+        "proficiency_bonus": null,
+        "speed": {
+          "walk": 10,
+          "unit": "feet",
+          "swim": 40
+        },
+        "speed_all": {
+          "unit": "feet",
+          "walk": 10,
+          "crawl": 5,
+          "hover": false,
+          "fly": 0,
+          "burrow": 0,
+          "climb": 5,
+          "swim": 40
+        },
+        "category": "Monsters",
+        "subcategory": null,
+        "alignment": "lawful evil",
+        "languages": {
+          "as_string": "Deep Speech; telepathy 120 ft.",
+          "data": [
+            {
+              "name": "Deep Speech",
+              "key": "deep-speech",
+              "desc": "Typical speakers include aboleths and cloakers. It is only spoken."
+            }
+          ]
+        },
+        "armor_class": 17,
+        "armor_detail": "natural armor",
+        "hit_points": 150,
+        "hit_dice": "20d10 + 40",
+        "experience_points": 5900,
+        "ability_scores": {
+          "strength": 21,
+          "dexterity": 9,
+          "constitution": 15,
+          "intelligence": 18,
+          "wisdom": 15,
+          "charisma": 18
+        },
+        "modifiers": {
+          "strength": 5,
+          "dexterity": -1,
+          "constitution": 2,
+          "intelligence": 4,
+          "wisdom": 2,
+          "charisma": 4
+        },
+        "initiative_bonus": 7,
+        "saving_throws": {
+          "strength": 5,
+          "dexterity": 3,
+          "constitution": 6,
+          "intelligence": 8,
+          "wisdom": 6,
+          "charisma": 4
+        },
+        "saving_throws_all": {
+          "strength": 5,
+          "dexterity": 3,
+          "constitution": 6,
+          "intelligence": 8,
+          "wisdom": 6,
+          "charisma": 4
+        },
+        "skill_bonuses": {
+          "history": 12,
+          "perception": 10
+        },
+        "skill_bonuses_all": {
+          "acrobatics": -1,
+          "animal_handling": 2,
+          "arcana": 4,
+          "athletics": 5,
+          "deception": 4,
+          "history": 12,
+          "insight": 2,
+          "intimidation": 4,
+          "investigation": 4,
+          "medicine": 2,
+          "nature": 4,
+          "perception": 10,
+          "performance": 4,
+          "persuasion": 4,
+          "religion": 4,
+          "sleight_of_hand": -1,
+          "stealth": -1,
+          "survival": 2
+        },
+        "passive_perception": 20,
+        "resistances_and_immunities": {
+          "damage_immunities_display": "",
+          "damage_immunities": [],
+          "damage_resistances_display": "",
+          "damage_resistances": [],
+          "damage_vulnerabilities_display": "",
+          "damage_vulnerabilities": [],
+          "condition_immunities_display": "",
+          "condition_immunities": []
+        },
+        "normal_sight_range": 10560,
+        "darkvision_range": 120,
+        "blindsight_range": null,
+        "tremorsense_range": null,
+        "truesight_range": null,
+        "actions": [
+          {
+            "name": "Consume Memories",
+            "desc": "Intelligence Saving Throw: DC 16, one creature within 30 feet that is Charmed or Grappled by the aboleth. Failure: 10 (3d6) Psychic damage. Success: Half damage. Failure or Success: The aboleth gains the target's memories if the target is a Humanoid and is reduced to 0 Hit Points by this action.",
+            "crossreferences": {
+              "to": []
+            },
+            "attacks": [],
+            "action_type": "ACTION",
+            "order_in_statblock": 2,
+            "legendary_action_cost": 1,
+            "limited_to_form": null,
+            "usage_limits": null
+          },
+          {
+            "name": "Dominate Mind",
+            "desc": "Wisdom Saving Throw: DC 16, one creature the aboleth can see within 30 feet. Failure: The target has the Charmed condition until the aboleth dies or is on a different plane of existence from the target. While Charmed, the target acts as an ally to the aboleth and is under its control while within 60 feet of it. In addition, the aboleth and the target can communicate telepathically with each other over any distance. The target repeats the save whenever it takes damage as well as after every 24 hours it spends at least 1 mile away from the aboleth, ending the effect on itself on a success.",
+            "crossreferences": {
+              "to": []
+            },
+            "attacks": [],
+            "action_type": "ACTION",
+            "order_in_statblock": 3,
+            "legendary_action_cost": null,
+            "limited_to_form": null,
+            "usage_limits": {
+              "type": "PER_DAY",
+              "param": 2
+            }
+          },
+          {
+            "name": "Lash",
+            "desc": "The aboleth makes one Tentacle attack.",
+            "crossreferences": {
+              "to": []
+            },
+            "attacks": [],
+            "action_type": "LEGENDARY_ACTION",
+            "order_in_statblock": 0,
+            "legendary_action_cost": 1,
+            "limited_to_form": null,
+            "usage_limits": null
+          },
+          {
+            "name": "Multiattack",
+            "desc": "The aboleth makes two Tentacle attacks and uses either Consume Memories or Dominate Mind if available.",
+            "crossreferences": {
+              "to": []
+            },
+            "attacks": [],
+            "action_type": "ACTION",
+            "order_in_statblock": 0,
+            "legendary_action_cost": null,
+            "limited_to_form": null,
+            "usage_limits": null
+          },
+          {
+            "name": "Psychic Drain",
+            "desc": "If the aboleth has at least one creature Charmed or Grappled, it uses Consume Memories and regains 5 (1d10) Hit Points.",
+            "crossreferences": {
+              "to": []
+            },
+            "attacks": [],
+            "action_type": "LEGENDARY_ACTION",
+            "order_in_statblock": 1,
+            "legendary_action_cost": 1,
+            "limited_to_form": null,
+            "usage_limits": null
+          },
+          {
+            "name": "Tentacle",
+            "desc": "Melee Attack Roll: +9, reach 15 ft. 12 (2d6 + 5) Bludgeoning damage. If the target is a Large or smaller creature, it has the Grappled condition (escape DC 14) from one of four tentacles.",
+            "crossreferences": {
+              "to": []
+            },
+            "attacks": [
+              {
+                "name": "Tentacle attack",
+                "attack_type": "WEAPON",
+                "to_hit_mod": 9,
+                "reach": 15,
+                "range": null,
+                "long_range": null,
+                "target_creature_only": false,
+                "damage_die_count": 2,
+                "damage_die_type": "D6",
+                "damage_bonus": 5,
+                "damage_type": null,
+                "extra_damage_die_count": null,
+                "extra_damage_die_type": null,
+                "extra_damage_bonus": null,
+                "extra_damage_type": {
+                  "name": "Bludgeoning",
+                  "key": "bludgeoning"
+                },
+                "distance_unit": "feet"
+              }
+            ],
+            "action_type": "ACTION",
+            "order_in_statblock": 1,
+            "legendary_action_cost": 1,
+            "limited_to_form": null,
+            "usage_limits": null
+          }
+        ],
+        "traits": [
+          {
+            "name": "Amphibious",
+            "desc": "The aboleth can breathe air and water."
+          },
+          {
+            "name": "Eldritch Restoration",
+            "desc": "If destroyed, the aboleth gains a new body in 5d10 days, reviving with all its Hit Points in the Far Realm or another location chosen by the DM."
+          },
+          {
+            "name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
+            "desc": "If the aboleth fails a saving throw, it can choose to succeed instead."
+          },
+          {
+            "name": "Mucus Cloud",
+            "desc": "While underwater, the aboleth is surrounded by mucus. Constitution Saving Throw: DC 14, each creature in a 5-foot Emanation originating from the aboleth at the end of the aboleth's turn. Failure: The target is cursed. Until the curse ends, the target's skin becomes slimy, the target can breathe air and water, and it can't regain Hit Points unless it is underwater. While the cursed creature is outside a body of water, the creature takes 6 (1d12) Acid damage at the end of every 10 minutes unless moisture is applied to its skin before those minutes have passed."
+          },
+          {
+            "name": "Probing Telepathy",
+            "desc": "If a creature the aboleth can see communicates telepathically with the aboleth, the aboleth learns the creature's greatest desires."
+          }
+        ],
+        "creaturesets": [],
+        "environments": [],
+        "illustration": null,
+        "crossreferences": {
+          "to": []
+        }
+      },
+      {
+        "key": "srd-2024_adult-black-dragon",
+        "name": "Adult Black Dragon",
+        "document": {
+          "name": "System Reference Document 5.2",
+          "key": "srd-2024",
+          "type": "SOURCE",
+          "display_name": "5e 2024 Rules",
+          "publisher": {
+            "name": "Wizards of the Coast",
+            "key": "wizards-of-the-coast"
+          },
+          "gamesystem": {
+            "name": "5th Edition 2024",
+            "key": "5e-2024"
+          },
+          "permalink": "https://dnd.wizards.com/resources/systems-reference-document"
+        },
+        "type": {
+          "name": "Dragon",
+          "key": "dragon"
+        },
+        "size": {
+          "name": "Huge",
+          "key": "huge"
+        },
+        "challenge_rating": 14.0,
+        "proficiency_bonus": null,
+        "speed": {
+          "walk": 40,
+          "unit": "feet",
+          "fly": 80,
+          "swim": 40
+        },
+        "speed_all": {
+          "unit": "feet",
+          "walk": 40,
+          "crawl": 20,
+          "hover": false,
+          "fly": 80,
+          "burrow": 0,
+          "climb": 20,
+          "swim": 40
+        },
+        "category": "Monsters",
+        "subcategory": null,
+        "alignment": "chaotic evil",
+        "languages": {
+          "as_string": "Common, Draconic",
+          "data": [
+            {
+              "name": "Common",
+              "key": "common",
+              "desc": "Typical speakers are Humans."
+            },
+            {
+              "name": "Draconic",
+              "key": "draconic",
+              "desc": "Typical speakers include dragons and dragonborn."
+            }
+          ]
+        },
+        "armor_class": 19,
+        "armor_detail": "natural armor",
+        "hit_points": 195,
+        "hit_dice": "17d12 + 85",
+        "experience_points": 11500,
+        "ability_scores": {
+          "strength": 23,
+          "dexterity": 14,
+          "constitution": 21,
+          "intelligence": 14,
+          "wisdom": 13,
+          "charisma": 19
+        },
+        "modifiers": {
+          "strength": 6,
+          "dexterity": 2,
+          "constitution": 5,
+          "intelligence": 2,
+          "wisdom": 1,
+          "charisma": 4
+        },
+        "initiative_bonus": 12,
+        "saving_throws": {
+          "strength": 6,
+          "dexterity": 7,
+          "constitution": 5,
+          "intelligence": 2,
+          "wisdom": 6,
+          "charisma": 4
+        },
+        "saving_throws_all": {
+          "strength": 6,
+          "dexterity": 7,
+          "constitution": 5,
+          "intelligence": 2,
+          "wisdom": 6,
+          "charisma": 4
+        },
+        "skill_bonuses": {
+          "perception": 11,
+          "stealth": 7
+        },
+        "skill_bonuses_all": {
+          "acrobatics": 2,
+          "animal_handling": 1,
+          "arcana": 2,
+          "athletics": 6,
+          "deception": 4,
+          "history": 2,
+          "insight": 1,
+          "intimidation": 4,
+          "investigation": 2,
+          "medicine": 1,
+          "nature": 2,
+          "perception": 11,
+          "performance": 4,
+          "persuasion": 4,
+          "religion": 2,
+          "sleight_of_hand": 2,
+          "stealth": 7,
+          "survival": 1
+        },
+        "passive_perception": 21,
+        "resistances_and_immunities": {
+          "damage_immunities_display": "acid",
+          "damage_immunities": [
+            {
+              "name": "Acid",
+              "key": "acid"
+            }
+          ],
+          "damage_resistances_display": "",
+          "damage_resistances": [],
+          "damage_vulnerabilities_display": "",
+          "damage_vulnerabilities": [],
+          "condition_immunities_display": "",
+          "condition_immunities": []
+        },
+        "normal_sight_range": 10560,
+        "darkvision_range": 120,
+        "blindsight_range": 60,
+        "tremorsense_range": null,
+        "truesight_range": null,
+        "actions": [
+          {
+            "name": "Acid Breath",
+            "desc": "Dexterity Saving Throw: DC 18, each creature in a 60-foot-long, 5-foot-wide Line. Failure: 54 (12d8) Acid damage. Success: Half damage.",
+            "crossreferences": {
+              "to": []
+            },
+            "attacks": [],
+            "action_type": "ACTION",
+            "order_in_statblock": 2,
+            "legendary_action_cost": null,
+            "limited_to_form": null,
+            "usage_limits": {
+              "type": "RECHARGE_ON_ROLL",
+              "param": 5
+            }
+          },
+          {
+            "name": "Cloud of Insects",
+            "desc": "Dexterity Saving Throw: DC 17, one creature the dragon can see within 120 feet. Failure: 22 (4d10) Poison damage, and the target has Disadvantage on saving throws to maintain Concentration until the end of its next turn. Failure or Success: The dragon can't take this action again until the start of its next turn.",
+            "crossreferences": {
+              "to": []
+            },
+            "attacks": [],
+            "action_type": "LEGENDARY_ACTION",
+            "order_in_statblock": 0,
+            "legendary_action_cost": 1,
+            "limited_to_form": null,
+            "usage_limits": null
+          },
+          {
+            "name": "Frightful Presence",
+            "desc": "The dragon uses Spellcasting to cast Fear. The dragon can't take this action again until the start of its next turn.",
+            "crossreferences": {
+              "to": []
+            },
+            "attacks": [],
+            "action_type": "LEGENDARY_ACTION",
+            "order_in_statblock": 1,
+            "legendary_action_cost": 1,
+            "limited_to_form": null,
+            "usage_limits": null
+          },
+          {
+            "name": "Multiattack",
+            "desc": "The dragon makes three Rend attacks. It can replace one attack with a use of Spellcasting to cast Acid Arrow (level 3 version).",
+            "crossreferences": {
+              "to": []
+            },
+            "attacks": [],
+            "action_type": "ACTION",
+            "order_in_statblock": 0,
+            "legendary_action_cost": 1,
+            "limited_to_form": null,
+            "usage_limits": null
+          },
+          {
+            "name": "Pounce",
+            "desc": "The dragon can move up to half its Speed, and it makes one Rend attack.",
+            "crossreferences": {
+              "to": []
+            },
+            "attacks": [],
+            "action_type": "LEGENDARY_ACTION",
+            "order_in_statblock": 2,
+            "legendary_action_cost": 1,
+            "limited_to_form": null,
+            "usage_limits": null
+          },
+          {
+            "name": "Rend",
+            "desc": "Melee Attack Roll: +11, reach 10 ft. 13 (2d6 + 6) Slashing damage plus 4 (1d8) Acid damage.",
+            "crossreferences": {
+              "to": []
+            },
+            "attacks": [
+              {
+                "name": "Rend attack",
+                "attack_type": "WEAPON",
+                "to_hit_mod": 11,
+                "reach": 10,
+                "range": null,
+                "long_range": null,
+                "target_creature_only": false,
+                "damage_die_count": 2,
+                "damage_die_type": "D6",
+                "damage_bonus": 6,
+                "damage_type": {
+                  "name": "Slashing",
+                  "key": "slashing"
+                },
+                "extra_damage_die_count": 1,
+                "extra_damage_die_type": "D8",
+                "extra_damage_bonus": 0,
+                "extra_damage_type": {
+                  "name": "Acid",
+                  "key": "acid"
+                },
+                "distance_unit": "feet"
+              }
+            ],
+            "action_type": "ACTION",
+            "order_in_statblock": 1,
+            "legendary_action_cost": 1,
+            "limited_to_form": null,
+            "usage_limits": null
+          },
+          {
+            "name": "Spellcasting",
+            "desc": "The dragon casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 17, +9 to hit with spell attacks):\n\n- **At Will:** Detect Magic, Fear, Acid Arrow\n- **1/Day Each:** Speak with Dead, Vitriolic Sphere",
+            "crossreferences": {
+              "to": []
+            },
+            "attacks": [],
+            "action_type": "ACTION",
+            "order_in_statblock": 3,
+            "legendary_action_cost": null,
+            "limited_to_form": null,
+            "usage_limits": null
+          }
+        ],
+        "traits": [
+          {
+            "name": "Amphibious",
+            "desc": "The dragon can breathe air and water."
+          },
+          {
+            "name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
+            "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+          }
+        ],
+        "creaturesets": [],
+        "environments": [],
+        "illustration": null,
+        "crossreferences": {
+          "to": []
+        }
+      }
+    ]
+  },
+  "https://api.open5e.com/v2/items/?document__key=srd-2024&limit=2": {
+    "count": 440,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "key": "srd-2024_acid",
+        "name": "Acid",
+        "desc": "When you take the Attack action, you can replace one of your attacks with throwing a vial of Acid. Target one creature or object you can see within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or take 2d6 Acid damage.",
+        "category": {
+          "name": "Weapon",
+          "key": "weapon"
+        },
+        "weapon": null,
+        "armor": null,
+        "size": {
+          "name": "Tiny",
+          "key": "tiny"
+        },
+        "weight": "1.000",
+        "weight_unit": "lb",
+        "cost": "25.00",
+        "document": {
+          "name": "System Reference Document 5.2",
+          "key": "srd-2024",
+          "type": "SOURCE",
+          "display_name": "5e 2024 Rules",
+          "publisher": {
+            "name": "Wizards of the Coast",
+            "key": "wizards-of-the-coast"
+          },
+          "gamesystem": {
+            "name": "5th Edition 2024",
+            "key": "5e-2024"
+          },
+          "permalink": "https://dnd.wizards.com/resources/systems-reference-document"
+        },
+        "crossreferences": {
+          "to": []
+        }
+      },
+      {
+        "key": "srd-2024_airship",
+        "name": "Airship",
+        "desc": "A magical flying vessel capable of air travel.",
+        "category": {
+          "name": "Wondrous Item",
+          "key": "wondrous-item"
+        },
+        "weapon": null,
+        "armor": null,
+        "size": {
+          "name": "Tiny",
+          "key": "tiny"
+        },
+        "weight": "0.000",
+        "weight_unit": "lb",
+        "cost": "40000.00",
+        "document": {
+          "name": "System Reference Document 5.2",
+          "key": "srd-2024",
+          "type": "SOURCE",
+          "display_name": "5e 2024 Rules",
+          "publisher": {
+            "name": "Wizards of the Coast",
+            "key": "wizards-of-the-coast"
+          },
+          "gamesystem": {
+            "name": "5th Edition 2024",
+            "key": "5e-2024"
+          },
+          "permalink": "https://dnd.wizards.com/resources/systems-reference-document"
+        },
+        "crossreferences": {
+          "to": []
+        }
+      }
+    ]
+  },
+  "https://api.open5e.com/v2/magicitems/?document__key=srd-2024&limit=2": {
+    "count": 2322,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "key": "srd-2024_adamantine-armor-breastplate",
+        "name": "Adamantine Armor (Breastplate)",
+        "desc": "This suit of armor is reinforced with adamantine, one of the hardest substances in existence. While you're wearing it, any Critical Hit against you becomes a normal hit.",
+        "category": {
+          "name": "Armor",
+          "key": "armor"
+        },
+        "rarity": {
+          "name": "Uncommon",
+          "key": "uncommon",
+          "rank": 2
+        },
+        "weapon": null,
+        "armor": {
+          "name": "Breastplate",
+          "key": "srd-2024_breastplate",
+          "category": "medium",
+          "ac_base": 14,
+          "ac_display": "14 + Dex modifier (max 2)",
+          "ac_add_dexmod": true,
+          "ac_cap_dexmod": 2,
+          "grants_stealth_disadvantage": false,
+          "strength_score_required": null
+        },
+        "size": {
+          "name": "Tiny",
+          "key": "tiny"
+        },
+        "weight": "20.000",
+        "weight_unit": "lb",
+        "cost": "0.00",
+        "requires_attunement": false,
+        "attunement_detail": null,
+        "document": {
+          "name": "System Reference Document 5.2",
+          "key": "srd-2024",
+          "type": "SOURCE",
+          "display_name": "5e 2024 Rules",
+          "publisher": {
+            "name": "Wizards of the Coast",
+            "key": "wizards-of-the-coast"
+          },
+          "gamesystem": {
+            "name": "5th Edition 2024",
+            "key": "5e-2024"
+          },
+          "permalink": "https://dnd.wizards.com/resources/systems-reference-document"
+        },
+        "crossreferences": {
+          "to": []
+        }
+      },
+      {
+        "key": "srd-2024_adamantine-armor-chain-mail",
+        "name": "Adamantine Armor (Chain Mail)",
+        "desc": "This suit of armor is reinforced with adamantine, one of the hardest substances in existence. While you're wearing it, any Critical Hit against you becomes a normal hit.",
+        "category": {
+          "name": "Armor",
+          "key": "armor"
+        },
+        "rarity": {
+          "name": "Uncommon",
+          "key": "uncommon",
+          "rank": 2
+        },
+        "weapon": null,
+        "armor": {
+          "name": "Chain Mail",
+          "key": "srd-2024_chain-mail",
+          "category": "heavy",
+          "ac_base": 16,
+          "ac_display": "16",
+          "ac_add_dexmod": false,
+          "ac_cap_dexmod": null,
+          "grants_stealth_disadvantage": true,
+          "strength_score_required": 13
+        },
+        "size": {
+          "name": "Tiny",
+          "key": "tiny"
+        },
+        "weight": "55.000",
+        "weight_unit": "lb",
+        "cost": "0.00",
+        "requires_attunement": false,
+        "attunement_detail": null,
+        "document": {
+          "name": "System Reference Document 5.2",
+          "key": "srd-2024",
+          "type": "SOURCE",
+          "display_name": "5e 2024 Rules",
+          "publisher": {
+            "name": "Wizards of the Coast",
+            "key": "wizards-of-the-coast"
+          },
+          "gamesystem": {
+            "name": "5th Edition 2024",
+            "key": "5e-2024"
+          },
+          "permalink": "https://dnd.wizards.com/resources/systems-reference-document"
+        },
+        "crossreferences": {
+          "to": []
+        }
+      },
+      {
+        "key": "srd_adamantine-armor-breastplate",
+        "name": "Adamantine Armor (Breastplate)",
+        "desc": "This suit of armor is reinforced with adamantine, one of the hardest substances in existence. While you're wearing it, any critical hit against you becomes a normal hit.",
+        "category": {
+          "name": "Armor",
+          "key": "armor"
+        },
+        "rarity": {
+          "name": "Uncommon",
+          "key": "uncommon",
+          "rank": 2
+        },
+        "weapon": null,
+        "armor": {
+          "name": "Breastplate",
+          "key": "srd_breastplate",
+          "category": "medium",
+          "ac_base": 14,
+          "ac_display": "14 + Dex modifier (max 2)",
+          "ac_add_dexmod": true,
+          "ac_cap_dexmod": 2,
+          "grants_stealth_disadvantage": false,
+          "strength_score_required": null
+        },
+        "size": {
+          "name": "Tiny",
+          "key": "tiny"
+        },
+        "weight": "20.000",
+        "weight_unit": "lb",
+        "cost": null,
+        "requires_attunement": false,
+        "attunement_detail": null,
+        "document": {
+          "name": "System Reference Document 5.1",
+          "key": "srd-2014",
+          "type": "SOURCE",
+          "display_name": "5e 2014 Rules",
+          "publisher": {
+            "name": "Wizards of the Coast",
+            "key": "wizards-of-the-coast"
+          },
+          "gamesystem": {
+            "name": "5th Edition 2014",
+            "key": "5e-2014"
+          },
+          "permalink": "https://dnd.wizards.com/resources/systems-reference-document"
+        },
+        "crossreferences": {
+          "to": []
+        }
+      }
+    ]
+  },
+  "https://api.open5e.com/v2/classes/?document__key=srd-2024&limit=2": {
+    "count": 24,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "key": "srd-2024_barbarian",
+        "features": [
+          {
+            "key": "srd-2024_barbarian_ability-score-improvement",
+            "name": "Ability Score Improvement",
+            "desc": "You gain the Ability Score Improvement feat (see \"Feats\") or another feat of your choice for which you qualify. You gain this feature again at Barbarian levels 8, 12, and 16.",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "CLASS_LEVEL_FEATURE",
+            "gained_at": [
+              {
+                "level": 12,
+                "detail": null
+              },
+              {
+                "level": 16,
+                "detail": null
+              },
+              {
+                "level": 4,
+                "detail": null
+              },
+              {
+                "level": 8,
+                "detail": null
+              }
+            ],
+            "data_for_class_table": []
+          },
+          {
+            "key": "srd-2024_barbarian_barbarian-subclass",
+            "name": "Barbarian Subclass",
+            "desc": "You gain a Barbarian subclass of your choice. The Path of the Berserker subclass is detailed after this class's description. A subclass is a specialization that grants you features at certain Barbarian levels. For the rest of your career, you gain each of your subclass's features that are of your Barbarian level or lower.",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "CLASS_LEVEL_FEATURE",
+            "gained_at": [
+              {
+                "level": 3,
+                "detail": null
+              }
+            ],
+            "data_for_class_table": []
+          },
+          {
+            "key": "srd-2024_barbarian_brutal-strike",
+            "name": "Brutal Strike",
+            "desc": "If you use Reckless Attack, you can forgo any Advantage on one Strength-based attack roll of your choice on your turn. The chosen attack roll mustn't have Disadvantage. If the chosen attack roll hits, the target takes an extra 1d10 damage of the same type dealt by the weapon or Unarmed Strike, and you can cause one Brutal Strike effect of your choice. You have the following effect options.\n\n**Forceful Blow.** The target is pushed 15 feet straight away from you. You can then move up to half your Speed straight toward the target without provoking Opportunity Attacks.\n\n**Hamstring Blow.** The target's Speed is reduced by 15 feet until the start of your next turn. A target can be affected by only one Hamstring Blow at a time the most recent one.",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "CLASS_LEVEL_FEATURE",
+            "gained_at": [
+              {
+                "level": 9,
+                "detail": null
+              }
+            ],
+            "data_for_class_table": []
+          },
+          {
+            "key": "srd-2024_barbarian_core-traits",
+            "name": "Core Barbarian Traits",
+            "desc": "|||\n|---|---|\n|Primary Ability|Strength|\n|Hit Point Die|D12 per Barbarian level|\n|Saving Throw Proficiencies|Strength and Constitution|\n|Skill Proficiencies|Choose 2: Animal Handling, Athletics, Intimidation, Nature, Perception, or Survival|\n|Weapon Proficiencies|Simple and Martial weapons|\n|Armor Training|Light and Medium armor and Shields|\n|Starting Equipment|Choose A or B: (A) Greataxe, 4 Handaxes, Explorer's Pack, and 15 GP; or (B) 75 GP|",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "CORE_TRAITS_TABLE",
+            "gained_at": [],
+            "data_for_class_table": []
+          },
+          {
+            "key": "srd-2024_barbarian_danger-sense",
+            "name": "Danger Sense",
+            "desc": "You gain an uncanny sense of when things aren't as they should be, giving you an edge when you dodge perils. You have Advantage on Dexterity saving throws unless you have the Incapacitated condition.",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "CLASS_LEVEL_FEATURE",
+            "gained_at": [
+              {
+                "level": 2,
+                "detail": null
+              }
+            ],
+            "data_for_class_table": []
+          },
+          {
+            "key": "srd-2024_barbarian_epic-boon",
+            "name": "Epic Boon",
+            "desc": "You gain an Epic Boon feat (see \"Feats\") or another feat of your choice for which you qualify. Boon of Irresistible Offense is recommended.",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "CLASS_LEVEL_FEATURE",
+            "gained_at": [
+              {
+                "level": 19,
+                "detail": null
+              }
+            ],
+            "data_for_class_table": []
+          },
+          {
+            "key": "srd-2024_barbarian_extra-attack",
+            "name": "Extra Attack",
+            "desc": "You can attack twice instead of once whenever you take the Attack action on your turn.",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "CLASS_LEVEL_FEATURE",
+            "gained_at": [
+              {
+                "level": 5,
+                "detail": null
+              }
+            ],
+            "data_for_class_table": []
+          },
+          {
+            "key": "srd-2024_barbarian_fast-movement",
+            "name": "Fast Movement",
+            "desc": "Your speed increases by 10 feet while you aren't wearing Heavy armor.",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "CLASS_LEVEL_FEATURE",
+            "gained_at": [
+              {
+                "level": 5,
+                "detail": null
+              }
+            ],
+            "data_for_class_table": []
+          },
+          {
+            "key": "srd-2024_barbarian_feral-instinct",
+            "name": "Feral Instinct",
+            "desc": "Your instincts are so honed that you have Advantage on Initiative rolls.",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "CLASS_LEVEL_FEATURE",
+            "gained_at": [
+              {
+                "level": 7,
+                "detail": null
+              }
+            ],
+            "data_for_class_table": []
+          },
+          {
+            "key": "srd-2024_barbarian_improved-brutal-strike",
+            "name": "Improved Brutal Strike",
+            "desc": "You have honed new ways to attack furiously. The following effects are now among your Brutal Strike options.\n\n**Staggering Blow.** The target has Disadvantage on the next saving throw it makes, and it can't make Opportunity Attacks until the start of your next turn.\n\n**Sundering Blow.** Before the start of your next turn, the next attack roll made by another creature against the target gains a +5 bonus to the roll. An attack roll can gain only one Sundering Blow bonus.",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "CLASS_LEVEL_FEATURE",
+            "gained_at": [
+              {
+                "level": 13,
+                "detail": null
+              }
+            ],
+            "data_for_class_table": []
+          },
+          {
+            "key": "srd-2024_barbarian_improved-brutal-strike-enhanced",
+            "name": "Improved Brutal Strike (Enhanced)",
+            "desc": "The extra damage of your Brutal Strike increases to 2d10. In addition, you can use two different Brutal Strike effects whenever you use your Brutal Strike feature.",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "CLASS_LEVEL_FEATURE",
+            "gained_at": [
+              {
+                "level": 17,
+                "detail": null
+              }
+            ],
+            "data_for_class_table": []
+          },
+          {
+            "key": "srd-2024_barbarian_indomitable-might",
+            "name": "Indomitable Might",
+            "desc": "If your total for a Strength check or Strength saving throw is less than your Strength score, you can use that score in place of the total.",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "CLASS_LEVEL_FEATURE",
+            "gained_at": [
+              {
+                "level": 18,
+                "detail": null
+              }
+            ],
+            "data_for_class_table": []
+          },
+          {
+            "key": "srd-2024_barbarian_instinctive-pounce",
+            "name": "Instinctive Pounce",
+            "desc": "As part of the Bonus Action you take to enter your Rage, you can move up to half your Speed.",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "CLASS_LEVEL_FEATURE",
+            "gained_at": [
+              {
+                "level": 7,
+                "detail": null
+              }
+            ],
+            "data_for_class_table": []
+          },
+          {
+            "key": "srd-2024_barbarian_persistent-rage",
+            "name": "Persistent Rage",
+            "desc": "When you roll Initiative, you can regain all expended uses of Rage. After you regain uses of Rage in this way, you can't do so again until you finish a Long Rest.\n\nIn addition, your Rage is so fierce that it now lasts for 10 minutes without you needing to do anything to extend it from round to round. Your Rage ends early if you have the Unconscious condition (not just the Incapacitated condition) or don Heavy armor.",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "CLASS_LEVEL_FEATURE",
+            "gained_at": [
+              {
+                "level": 15,
+                "detail": null
+              }
+            ],
+            "data_for_class_table": []
+          },
+          {
+            "key": "srd-2024_barbarian_primal-champion",
+            "name": "Primal Champion",
+            "desc": "You embody primal power. Your Strength and Constitution scores increase by 4, to a maximum of 25.",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "CLASS_LEVEL_FEATURE",
+            "gained_at": [
+              {
+                "level": 20,
+                "detail": null
+              }
+            ],
+            "data_for_class_table": []
+          },
+          {
+            "key": "srd-2024_barbarian_primal-knowledge",
+            "name": "Primal Knowledge",
+            "desc": "You gain proficiency in another skill of your choice from the skill list available to Barbarians at level 1.\n\nIn addition, while your Rage is active, you can channel primal power when you attempt certain tasks; whenever you make an ability check using one of the following skills, you can make it as a Strength check even if it normally uses a different ability: Acrobatics, Intimidation, Perception, Stealth, or Survival. When you use this ability, your Strength represents primal power coursing through you, honing your agility, bearing, and senses.",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "CLASS_LEVEL_FEATURE",
+            "gained_at": [
+              {
+                "level": 3,
+                "detail": null
+              }
+            ],
+            "data_for_class_table": []
+          },
+          {
+            "key": "srd-2024_barbarian_proficiency-bonus",
+            "name": "Proficiency Bonus",
+            "desc": "[Column data]",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "PROFICIENCY_BONUS",
+            "gained_at": [],
+            "data_for_class_table": [
+              {
+                "level": 1,
+                "column_value": "+2"
+              },
+              {
+                "level": 10,
+                "column_value": "+4"
+              },
+              {
+                "level": 11,
+                "column_value": "+4"
+              },
+              {
+                "level": 12,
+                "column_value": "+4"
+              },
+              {
+                "level": 13,
+                "column_value": "+5"
+              },
+              {
+                "level": 14,
+                "column_value": "+5"
+              },
+              {
+                "level": 15,
+                "column_value": "+5"
+              },
+              {
+                "level": 16,
+                "column_value": "+5"
+              },
+              {
+                "level": 17,
+                "column_value": "+6"
+              },
+              {
+                "level": 18,
+                "column_value": "+6"
+              },
+              {
+                "level": 19,
+                "column_value": "+6"
+              },
+              {
+                "level": 2,
+                "column_value": "+2"
+              },
+              {
+                "level": 20,
+                "column_value": "+6"
+              },
+              {
+                "level": 3,
+                "column_value": "+2"
+              },
+              {
+                "level": 4,
+                "column_value": "+2"
+              },
+              {
+                "level": 5,
+                "column_value": "+3"
+              },
+              {
+                "level": 6,
+                "column_value": "+3"
+              },
+              {
+                "level": 7,
+                "column_value": "+3"
+              },
+              {
+                "level": 8,
+                "column_value": "+3"
+              },
+              {
+                "level": 9,
+                "column_value": "+4"
+              }
+            ]
+          },
+          {
+            "key": "srd-2024_barbarian_rage",
+            "name": "Rage",
+            "desc": "You can imbue yourself with a primal power called Rage, a force that grants you extraordinary might and resilience. You can enter it as a Bonus Action if you aren't wearing Heavy armor.\n\nYou can enter your Rage the number of times shown for your Barbarian level in the Rages column of the Barbarian Features table. You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest.\n\nWhile active, your Rage follows the rules below. *Damage Resistance.* You have Resistance to Bludgeoning, Piercing, and Slashing damage.\n\n**Rage Damage.** When you make an attack using Strength—with either a weapon or an Unarmed Strike—and deal damage to the target, you gain a bonus to the damage that increases as you gain levels as a Barbarian, as shown in the Rage Damage column of the Barbarian Features table.\n\n**Strength Advantage.** You have Advantage on Strength checks and Strength saving throws.\n\n**No Concentration or Spells.** You can't maintain Concentration, and you can't cast spells.\n\n**Duration.** The Rage lasts until the end of your next turn, and it ends early if you don Heavy armor or have the Incapacitated condition. If your Rage is still active on your next turn, you can extend the Rage for another round by doing one of the following:\n- Make an attack roll against an enemy.\n- Force an enemy to make a saving throw.\n- Take a Bonus Action to extend your Rage.\n\nEach time the Rage is extended, it lasts until the end of your next turn. You can maintain a Rage for up to 10 minutes.",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "CLASS_LEVEL_FEATURE",
+            "gained_at": [
+              {
+                "level": 1,
+                "detail": null
+              }
+            ],
+            "data_for_class_table": []
+          },
+          {
+            "key": "srd-2024_barbarian_rage-damage",
+            "name": "Rage Damage",
+            "desc": "[Column data]",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "CLASS_TABLE_DATA",
+            "gained_at": [],
+            "data_for_class_table": [
+              {
+                "level": 1,
+                "column_value": "+2"
+              },
+              {
+                "level": 10,
+                "column_value": "+3"
+              },
+              {
+                "level": 11,
+                "column_value": "+3"
+              },
+              {
+                "level": 12,
+                "column_value": "+3"
+              },
+              {
+                "level": 13,
+                "column_value": "+3"
+              },
+              {
+                "level": 14,
+                "column_value": "+3"
+              },
+              {
+                "level": 15,
+                "column_value": "+3"
+              },
+              {
+                "level": 16,
+                "column_value": "+4"
+              },
+              {
+                "level": 17,
+                "column_value": "+4"
+              },
+              {
+                "level": 18,
+                "column_value": "+4"
+              },
+              {
+                "level": 19,
+                "column_value": "+4"
+              },
+              {
+                "level": 2,
+                "column_value": "+2"
+              },
+              {
+                "level": 20,
+                "column_value": "+4"
+              },
+              {
+                "level": 3,
+                "column_value": "+2"
+              },
+              {
+                "level": 4,
+                "column_value": "+2"
+              },
+              {
+                "level": 5,
+                "column_value": "+2"
+              },
+              {
+                "level": 6,
+                "column_value": "+2"
+              },
+              {
+                "level": 7,
+                "column_value": "+2"
+              },
+              {
+                "level": 8,
+                "column_value": "+2"
+              },
+              {
+                "level": 9,
+                "column_value": "+3"
+              }
+            ]
+          },
+          {
+            "key": "srd-2024_barbarian_rages",
+            "name": "Rages",
+            "desc": "[Column data]",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "CLASS_TABLE_DATA",
+            "gained_at": [],
+            "data_for_class_table": [
+              {
+                "level": 1,
+                "column_value": "2"
+              },
+              {
+                "level": 10,
+                "column_value": "4"
+              },
+              {
+                "level": 11,
+                "column_value": "4"
+              },
+              {
+                "level": 12,
+                "column_value": "5"
+              },
+              {
+                "level": 13,
+                "column_value": "5"
+              },
+              {
+                "level": 14,
+                "column_value": "5"
+              },
+              {
+                "level": 15,
+                "column_value": "5"
+              },
+              {
+                "level": 16,
+                "column_value": "5"
+              },
+              {
+                "level": 17,
+                "column_value": "6"
+              },
+              {
+                "level": 18,
+                "column_value": "6"
+              },
+              {
+                "level": 19,
+                "column_value": "6"
+              },
+              {
+                "level": 2,
+                "column_value": "2"
+              },
+              {
+                "level": 20,
+                "column_value": "6"
+              },
+              {
+                "level": 3,
+                "column_value": "3"
+              },
+              {
+                "level": 4,
+                "column_value": "3"
+              },
+              {
+                "level": 5,
+                "column_value": "3"
+              },
+              {
+                "level": 6,
+                "column_value": "4"
+              },
+              {
+                "level": 7,
+                "column_value": "4"
+              },
+              {
+                "level": 8,
+                "column_value": "4"
+              },
+              {
+                "level": 9,
+                "column_value": "4"
+              }
+            ]
+          },
+          {
+            "key": "srd-2024_barbarian_reckless-attack",
+            "name": "Reckless Attack",
+            "desc": "You can throw aside all concern for defense to attack with increased ferocity. When you make your first attack roll on your turn, you can decide to attack recklessly. Doing so gives you Advantage on attack rolls using Strength until the start of your next turn, but attack rolls against you have Advantage during that time.",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "CLASS_LEVEL_FEATURE",
+            "gained_at": [
+              {
+                "level": 2,
+                "detail": null
+              }
+            ],
+            "data_for_class_table": []
+          },
+          {
+            "key": "srd-2024_barbarian_relentless-rage",
+            "name": "Relentless Rage",
+            "desc": "Your Rage can keep you fighting despite grievous wounds. If you drop to 0 Hit Points while your Rage is active and don't die outright, you can make a DC 10 Constitution saving throw. If you succeed, your Hit Points instead change to a number equal to twice your Barbarian level.\n\nEach time you use this feature after the first, the DC increases by 5. When you finish a Short or Long Rest, the DC resets to 10.",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "CLASS_LEVEL_FEATURE",
+            "gained_at": [
+              {
+                "level": 11,
+                "detail": null
+              }
+            ],
+            "data_for_class_table": []
+          },
+          {
+            "key": "srd-2024_barbarian_unarmored-defense",
+            "name": "Unarmored Defense",
+            "desc": "While you aren't wearing any armor, your base Armor Class equals 10 plus your Dexterity and Constitution modifiers. You can use a Shield and still gain this benefit.",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "CLASS_LEVEL_FEATURE",
+            "gained_at": [
+              {
+                "level": 1,
+                "detail": null
+              }
+            ],
+            "data_for_class_table": []
+          },
+          {
+            "key": "srd-2024_barbarian_weapon-mastery",
+            "name": "Weapon Mastery",
+            "desc": "Your training with weapons allows you to use the mastery properties of two kinds of Simple or Martial Melee weapons of your choice, such as Greataxes and Handaxes. Whenever you finish a Long Rest, you can practice weapon drills and change one of those weapon choices.\n\nWhen you reach certain Barbarian levels, you gain the ability to use the mastery properties of more kinds of weapons, as shown in the Weapon Mastery column of the Barbarian Features table.",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "CLASS_LEVEL_FEATURE",
+            "gained_at": [
+              {
+                "level": 1,
+                "detail": null
+              }
+            ],
+            "data_for_class_table": []
+          },
+          {
+            "key": "srd-2024_barbarian_weapon-mastery-count",
+            "name": "Weapon Mastery",
+            "desc": "[Column data]",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "CLASS_TABLE_DATA",
+            "gained_at": [],
+            "data_for_class_table": [
+              {
+                "level": 1,
+                "column_value": "2"
+              },
+              {
+                "level": 10,
+                "column_value": "4"
+              },
+              {
+                "level": 11,
+                "column_value": "4"
+              },
+              {
+                "level": 12,
+                "column_value": "4"
+              },
+              {
+                "level": 13,
+                "column_value": "4"
+              },
+              {
+                "level": 14,
+                "column_value": "4"
+              },
+              {
+                "level": 15,
+                "column_value": "4"
+              },
+              {
+                "level": 16,
+                "column_value": "4"
+              },
+              {
+                "level": 17,
+                "column_value": "4"
+              },
+              {
+                "level": 18,
+                "column_value": "4"
+              },
+              {
+                "level": 19,
+                "column_value": "4"
+              },
+              {
+                "level": 2,
+                "column_value": "2"
+              },
+              {
+                "level": 20,
+                "column_value": "4"
+              },
+              {
+                "level": 3,
+                "column_value": "2"
+              },
+              {
+                "level": 4,
+                "column_value": "3"
+              },
+              {
+                "level": 5,
+                "column_value": "3"
+              },
+              {
+                "level": 6,
+                "column_value": "3"
+              },
+              {
+                "level": 7,
+                "column_value": "3"
+              },
+              {
+                "level": 8,
+                "column_value": "3"
+              },
+              {
+                "level": 9,
+                "column_value": "3"
+              }
+            ]
+          }
+        ],
+        "hit_points": {
+          "hit_dice": "D12",
+          "hit_dice_name": "1D12 per Barbarian level",
+          "hit_points_at_1st_level": "12 + your Constitution modifier",
+          "hit_points_at_higher_levels": "1D12 (or 7) + your Constitution modifier per barbarian level after 1st"
+        },
+        "document": {
+          "name": "System Reference Document 5.2",
+          "key": "srd-2024",
+          "type": "SOURCE",
+          "display_name": "5e 2024 Rules",
+          "publisher": {
+            "name": "Wizards of the Coast",
+            "key": "wizards-of-the-coast"
+          },
+          "gamesystem": {
+            "name": "5th Edition 2024",
+            "key": "5e-2024"
+          },
+          "permalink": "https://dnd.wizards.com/resources/systems-reference-document"
+        },
+        "saving_throws": [
+          {
+            "name": "Constitution"
+          },
+          {
+            "name": "Strength"
+          }
+        ],
+        "subclass_of": null,
+        "name": "Barbarian",
+        "desc": "",
+        "hit_dice": "D12",
+        "caster_type": "NONE",
+        "primary_abilities": [],
+        "crossreferences": {
+          "to": []
+        }
+      },
+      {
+        "key": "srd-2024_bard",
+        "features": [
+          {
+            "key": "srd-2024_bard_ability-score-improvement",
+            "name": "Ability Score Improvement",
+            "desc": "You gain the Ability Score Improvement feat (see \"Feats\") or another feat of your choice for which you qualify. You gain this feature again at Bard levels 8, 12, and 16.",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "CLASS_LEVEL_FEATURE",
+            "gained_at": [
+              {
+                "level": 12,
+                "detail": null
+              },
+              {
+                "level": 16,
+                "detail": null
+              },
+              {
+                "level": 4,
+                "detail": null
+              },
+              {
+                "level": 8,
+                "detail": null
+              }
+            ],
+            "data_for_class_table": []
+          },
+          {
+            "key": "srd-2024_bard_bard-spell-list",
+            "name": "Bard Spell List",
+            "desc": "This section presents the Bard spell list. The spells are organized by spell level and then alphabetized, and each spell's school of magic is listed. In the Special column, *C* means the spell requires Concentration, *R* means it's a Ritual, and *M* means it requires a specific Material component.\n\n**Cantrips (Level 0)**\n\n|Spell|School|Special|\n|---|---|---|\n|Dancing Lights|Illusion|C|\n|Light|Evocation|—|\n|Mage Hand|Conjuration|—|\n|Mending|Transmutation|—|\n|Message|Transmutation|—|\n|Minor Illusion|Illusion|—|\n|Prestidigitation|Transmutation|—|\n|Starry Wisp|Evocation|—|\n|True Strike|Divination|—|\n|Vicious Mockery|Enchantment|—|\n\n**Level 1**\n\n|Spell|School|Special|\n|---|---|---|\n|Animal Friendship|Enchantment|—|\n|Bane|Enchantment|C|\n|Charm Person|Enchantment|—|\n|Color Spray|Illusion|—|\n|Command|Enchantment|—|\n|Comprehend Languages|Divination|R|\n|Cure Wounds|Abjuration|—|\n|Detect Magic|Divination|C, R|\n|Disguise Self|Illusion|—|\n|Dissonant Whispers|Enchantment|—|\n|Faerie Fire|Evocation|C|\n|Feather Fall|Transmutation|—|\n|Healing Word|Abjuration|—|\n|Heroism|Enchantment|C|\n|Hideous Laughter|Enchantment|C|\n|Identify|Divination|R, M|\n|Illusory Script|Illusion|R, M|\n|Longstrider|Transmutation|—|\n|Silent Image|Illusion|C|\n|Sleep|Enchantment|C|\n|Speak with Animals|Divination|R|\n|Thunderwave|Evocation|—|\n|Unseen Servant|Conjuration|R|\n\n**Level 2**\n\n|Spell|School|Special|\n|---|---|---|\n|Aid|Abjuration|—|\n|Animal Messenger|Enchantment|R|\n|Blindness/Deafness|Transmutation|—|\n|Calm Emotions|Enchantment|C|\n|Detect Thoughts|Divination|C|\n|Enhance Ability|Transmutation|C|\n|Enlarge/Reduce|Transmutation|C|\n|Enthrall|Enchantment|C|\n|Heat Metal|Transmutation|C|\n|Hold Person|Enchantment|C|\n|Invisibility|Illusion|C|\n|Knock|Transmutation|—|\n|Lesser Restoration|Abjuration|—|\n|Locate Animals or Plants|Divination|R|\n|Locate Object|Divination|C|\n|Magic Mouth|Illusion|R, M|\n|Mirror Image|Illusion|—|\n|See Invisibility|Divination|—|\n|Shatter|Evocation|—|\n|Silence|Illusion|C, R|\n|Suggestion|Enchantment|C|\n|Zone of Truth|Enchantment|—|\n\n**Level 3**\n\n|Spell|School|Special|\n|---|---|---|\n|Bestow Curse|Necromancy|C|\n|Clairvoyance|Divination|C, M|\n|Dispel Magic|Abjuration|—|\n|Fear|Illusion|C|\n|Glyph of Warding|Abjuration|M|\n|Hypnotic Pattern|Illusion|C|\n|Major Image|Illusion|C|\n|Mass Healing Word|Abjuration|—|\n|Nondetection|Abjuration|M|\n|Plant Growth|Transmutation|—|\n|Sending|Divination|—|\n|Slow|Transmutation|C|\n|Speak with Dead|Necromancy|—|\n|Speak with Plants|Transmutation|—|\n|Stinking Cloud|Conjuration|C|\n|Tiny Hut|Evocation|R|\n|Tongues|Divination|—|\n\n**Level 4**\n\n|Spell|School|Special|\n|---|---|---|\n|Charm Monster|Enchantment|—|\n|Compulsion|Enchantment|C|\n|Confusion|Enchantment|C|\n|Dimension Door|Conjuration|—|\n|Freedom of Movement|Abjuration|—|\n|Greater Invisibility|Illusion|C|\n|Hallucinatory Terrain|Illusion|—|\n|Locate Creature|Divination|C|\n|Phantasmal Killer|Illusion|C|\n|Polymorph|Transmutation|C|\n\n**Level 5**\n\n|Spell|School|Special|\n|---|---|---|\n|Animate Objects|Transmutation|C|\n|Awaken|Transmutation|M|\n|Dominate Person|Enchantment|C|\n|Dream|Illusion|—|\n|Geas|Enchantment|—|\n|Greater Restoration|Abjuration|M|\n|Hold Monster|Enchantment|C|\n|Legend Lore|Divination|M|\n|Mass Cure Wounds|Abjuration|—|\n|Mislead|Illusion|C|\n|Modify Memory|Enchantment|C|\n|Planar Binding|Abjuration|M|\n|Raise Dead|Necromancy|M|\n|Scrying|Divination|C, M|\n|Seeming|Illusion|—|\n|Telepathic Bond|Divination|R|\n|Teleportation Circle|Conjuration|M|\n\n**Level 6**\n\n|Spell|School|Special|\n|---|---|---|\n|Eyebite|Necromancy|C|\n|Find the Path|Divination|C, M|\n|Guards and Wards|Abjuration|M|\n|Heroes' Feast|Conjuration|M|\n|Irresistible Dance|Enchantment|C|\n|Mass Suggestion|Enchantment|—|\n|Programmed Illusion|Illusion|M|\n|True Seeing|Divination|M|\n\n**Level 7**\n\n|Spell|School|Special|\n|---|---|---|\n|Arcane Sword|Evocation|C, M|\n|Etherealness|Conjuration|—|\n|Forcecage|Evocation|C, M|\n|Magnificent Mansion|Conjuration|M|\n|Mirage Arcane|Illusion|—|\n|Prismatic Spray|Evocation|—|\n|Project Image|Illusion|C, M|\n|Regenerate|Transmutation|—|\n|Resurrection|Necromancy|M|\n|Symbol|Abjuration|M|\n|Teleport|Conjuration|—|\n\n**Level 8**\n\n|Spell|School|Special|\n|---|---|---|\n|Antipathy/Sympathy|Enchantment|—|\n|Befuddlement|Enchantment|—|\n|Dominate Monster|Enchantment|C|\n|Glibness|Enchantment|—|\n|Mind Blank|Abjuration|—|\n|Power Word Stun|Enchantment|—|\n\n**Level 9**\n\n|Spell|School|Special|\n|---|---|---|\n|Foresight|Divination|—|\n|Power Word Heal|Enchantment|—|\n|Power Word Kill|Enchantment|—|\n|Prismatic Wall|Abjuration|—|\n|True Polymorph|Transmutation|C|",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "CLASS_LEVEL_FEATURE",
+            "gained_at": [],
+            "data_for_class_table": []
+          },
+          {
+            "key": "srd-2024_bard_bard-subclass",
+            "name": "Bard Subclass",
+            "desc": "You gain a Bard subclass of your choice. The College of Lore subclass is detailed after this class's description. A subclass is a specialization that grants you features at certain Bard levels. For the rest of your career, you gain each of your subclass's features that are of your Bard level or lower.",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "CLASS_LEVEL_FEATURE",
+            "gained_at": [],
+            "data_for_class_table": []
+          },
+          {
+            "key": "srd-2024_bard_bardic-die",
+            "name": "Bardic Die",
+            "desc": "[Column data]",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "CLASS_TABLE_DATA",
+            "gained_at": [],
+            "data_for_class_table": [
+              {
+                "level": 1,
+                "column_value": "D6"
+              },
+              {
+                "level": 10,
+                "column_value": "D10"
+              },
+              {
+                "level": 11,
+                "column_value": "D10"
+              },
+              {
+                "level": 12,
+                "column_value": "D10"
+              },
+              {
+                "level": 13,
+                "column_value": "D10"
+              },
+              {
+                "level": 14,
+                "column_value": "D10"
+              },
+              {
+                "level": 15,
+                "column_value": "D12"
+              },
+              {
+                "level": 16,
+                "column_value": "D12"
+              },
+              {
+                "level": 17,
+                "column_value": "D12"
+              },
+              {
+                "level": 18,
+                "column_value": "D12"
+              },
+              {
+                "level": 19,
+                "column_value": "D12"
+              },
+              {
+                "level": 2,
+                "column_value": "D6"
+              },
+              {
+                "level": 20,
+                "column_value": "D12"
+              },
+              {
+                "level": 3,
+                "column_value": "D6"
+              },
+              {
+                "level": 4,
+                "column_value": "D6"
+              },
+              {
+                "level": 5,
+                "column_value": "D8"
+              },
+              {
+                "level": 6,
+                "column_value": "D8"
+              },
+              {
+                "level": 7,
+                "column_value": "D8"
+              },
+              {
+                "level": 8,
+                "column_value": "D8"
+              },
+              {
+                "level": 9,
+                "column_value": "D8"
+              }
+            ]
+          },
+          {
+            "key": "srd-2024_bard_bardic-inspiration",
+            "name": "Bardic Inspiration",
+            "desc": "You can supernaturally inspire others through words, music, or dance. This inspiration is represented by your Bardic Inspiration die, which is a d6.\n\n**Using Bardic Inspiration.** As a Bonus Action, you can inspire another creature within 60 feet of yourself who can see or hear you. That creature gains one of your Bardic Inspiration dice. A creature can have only one Bardic Inspiration die at a time.\n\nOnce within the next hour when the creature fails a D20 Test, the creature can roll the Bardic Inspiration die and add the number rolled to the d20, potentially turning the failure into a success. A Bardic Inspiration die is expended when it's rolled.\n\n**Number of Uses.** You can confer a Bardic Inspiration die a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.\n\n**At Higher Levels.** Your Bardic Inspiration die changes when you reach certain Bard levels, as shown in the Bardic Die column of the Bard Features table. The die becomes a d8 at level 5, a d10 at level 10, and a d12 at level 15.",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "CLASS_LEVEL_FEATURE",
+            "gained_at": [
+              {
+                "level": 1,
+                "detail": null
+              }
+            ],
+            "data_for_class_table": []
+          },
+          {
+            "key": "srd-2024_bard_cantrips",
+            "name": "Cantrips",
+            "desc": "[Column data]",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "CLASS_TABLE_DATA",
+            "gained_at": [],
+            "data_for_class_table": [
+              {
+                "level": 1,
+                "column_value": "2"
+              },
+              {
+                "level": 10,
+                "column_value": "4"
+              },
+              {
+                "level": 11,
+                "column_value": "4"
+              },
+              {
+                "level": 12,
+                "column_value": "4"
+              },
+              {
+                "level": 13,
+                "column_value": "4"
+              },
+              {
+                "level": 14,
+                "column_value": "4"
+              },
+              {
+                "level": 15,
+                "column_value": "4"
+              },
+              {
+                "level": 16,
+                "column_value": "4"
+              },
+              {
+                "level": 17,
+                "column_value": "4"
+              },
+              {
+                "level": 18,
+                "column_value": "4"
+              },
+              {
+                "level": 19,
+                "column_value": "4"
+              },
+              {
+                "level": 2,
+                "column_value": "2"
+              },
+              {
+                "level": 20,
+                "column_value": "4"
+              },
+              {
+                "level": 3,
+                "column_value": "2"
+              },
+              {
+                "level": 4,
+                "column_value": "3"
+              },
+              {
+                "level": 5,
+                "column_value": "3"
+              },
+              {
+                "level": 6,
+                "column_value": "3"
+              },
+              {
+                "level": 7,
+                "column_value": "3"
+              },
+              {
+                "level": 8,
+                "column_value": "3"
+              },
+              {
+                "level": 9,
+                "column_value": "3"
+              }
+            ]
+          },
+          {
+            "key": "srd-2024_bard_core-traits",
+            "name": "Core Bard Traits",
+            "desc": "|||\n|---|---|\n|Primary Ability|Charisma|\n|Hit Point Die|D8 per Bard level|\n|Saving Throw Proficiencies|Dexterity and Charisma|\n|Skill Proficiencies|Choose any 3 skills|\n|Weapon Proficiencies|Simple weapons|\n|Tool Proficiencies|Choose 3 Musical Instruments|\n|Armor Training|Light armor|\n|Starting Equipment|Choose A or B: (A) Leather Armor, 2 Daggers, Musical Instrument of your choice, Entertainer's Pack, and 19 GP; or (B) 90 GP|",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "CORE_TRAITS_TABLE",
+            "gained_at": [],
+            "data_for_class_table": []
+          },
+          {
+            "key": "srd-2024_bard_countercharm",
+            "name": "Countercharm",
+            "desc": "You can use musical notes or words of power to disrupt mind-influencing effects. If you or a creature within 30 feet of you fails a saving throw against an effect that applies the Charmed or Frightened condition, you can take a Reaction to cause the save to be rerolled, and the new roll has Advantage.",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "CLASS_LEVEL_FEATURE",
+            "gained_at": [
+              {
+                "level": 7,
+                "detail": null
+              }
+            ],
+            "data_for_class_table": []
+          },
+          {
+            "key": "srd-2024_bard_epic-boon",
+            "name": "Epic Boon",
+            "desc": "You gain an Epic Boon feat (see \"Feats\") or another feat of your choice for which you qualify. Boon of Spell Recall is recommended.",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "CLASS_LEVEL_FEATURE",
+            "gained_at": [
+              {
+                "level": 19,
+                "detail": null
+              }
+            ],
+            "data_for_class_table": []
+          },
+          {
+            "key": "srd-2024_bard_expertise",
+            "name": "Expertise",
+            "desc": "You gain Expertise (see \"Rules Glossary\") in two of your skill proficiencies of your choice. Performance and Persuasion are recommended if you have proficiency in them.\n\nAt Bard level 9, you gain Expertise in two more of your skill proficiencies of your choice.",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "CLASS_LEVEL_FEATURE",
+            "gained_at": [
+              {
+                "level": 2,
+                "detail": null
+              }
+            ],
+            "data_for_class_table": []
+          },
+          {
+            "key": "srd-2024_bard_font-of-inspiration",
+            "name": "Font of Inspiration",
+            "desc": "You now regain all your expended uses of Bardic Inspiration when you finish a Short or Long Rest.\n\nIn addition, you can expend a spell slot (no action required) to regain one expended use of Bardic Inspiration.",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "CLASS_LEVEL_FEATURE",
+            "gained_at": [
+              {
+                "level": 5,
+                "detail": null
+              }
+            ],
+            "data_for_class_table": []
+          },
+          {
+            "key": "srd-2024_bard_jack-of-all-trades",
+            "name": "Jack of All Trades",
+            "desc": "You can add half your Proficiency Bonus (round down) to any ability check you make that uses a skill proficiency you lack and that doesn't otherwise use your Proficiency Bonus.\n\nFor example, if you make a Strength (Athletics) check and lack Athletics proficiency, you can add half your Proficiency Bonus to the check.",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "CLASS_LEVEL_FEATURE",
+            "gained_at": [
+              {
+                "level": 2,
+                "detail": null
+              }
+            ],
+            "data_for_class_table": []
+          },
+          {
+            "key": "srd-2024_bard_magical-secrets",
+            "name": "Magical Secrets",
+            "desc": "You've learned secrets from various magical traditions. Whenever you reach a Bard level (including this level) and the Prepared Spells number in the Bard Features table increases, you can choose any of your new prepared spells from the Bard, Cleric, Druid, and Wizard spell lists, and the chosen spells count as Bard spells for you (see a class's section for its spell list). In addition, whenever you replace a spell prepared for this class, you can replace it with a spell from those lists.",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "CLASS_LEVEL_FEATURE",
+            "gained_at": [
+              {
+                "level": 10,
+                "detail": null
+              }
+            ],
+            "data_for_class_table": []
+          },
+          {
+            "key": "srd-2024_bard_prepared-spells",
+            "name": "Prepared Spells",
+            "desc": "[Column data]",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "CLASS_TABLE_DATA",
+            "gained_at": [],
+            "data_for_class_table": [
+              {
+                "level": 1,
+                "column_value": "4"
+              },
+              {
+                "level": 10,
+                "column_value": "15"
+              },
+              {
+                "level": 11,
+                "column_value": "16"
+              },
+              {
+                "level": 12,
+                "column_value": "16"
+              },
+              {
+                "level": 13,
+                "column_value": "17"
+              },
+              {
+                "level": 14,
+                "column_value": "17"
+              },
+              {
+                "level": 15,
+                "column_value": "18"
+              },
+              {
+                "level": 16,
+                "column_value": "18"
+              },
+              {
+                "level": 17,
+                "column_value": "19"
+              },
+              {
+                "level": 18,
+                "column_value": "20"
+              },
+              {
+                "level": 19,
+                "column_value": "21"
+              },
+              {
+                "level": 2,
+                "column_value": "5"
+              },
+              {
+                "level": 20,
+                "column_value": "22"
+              },
+              {
+                "level": 3,
+                "column_value": "6"
+              },
+              {
+                "level": 4,
+                "column_value": "7"
+              },
+              {
+                "level": 5,
+                "column_value": "9"
+              },
+              {
+                "level": 6,
+                "column_value": "10"
+              },
+              {
+                "level": 7,
+                "column_value": "11"
+              },
+              {
+                "level": 8,
+                "column_value": "12"
+              },
+              {
+                "level": 9,
+                "column_value": "14"
+              }
+            ]
+          },
+          {
+            "key": "srd-2024_bard_proficiency-bonus",
+            "name": "Proficiency Bonus",
+            "desc": "[Column data]",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "PROFICIENCY_BONUS",
+            "gained_at": [],
+            "data_for_class_table": [
+              {
+                "level": 1,
+                "column_value": "+2"
+              },
+              {
+                "level": 10,
+                "column_value": "+4"
+              },
+              {
+                "level": 11,
+                "column_value": "+4"
+              },
+              {
+                "level": 12,
+                "column_value": "+4"
+              },
+              {
+                "level": 13,
+                "column_value": "+5"
+              },
+              {
+                "level": 14,
+                "column_value": "+5"
+              },
+              {
+                "level": 15,
+                "column_value": "+5"
+              },
+              {
+                "level": 16,
+                "column_value": "+5"
+              },
+              {
+                "level": 17,
+                "column_value": "+6"
+              },
+              {
+                "level": 18,
+                "column_value": "+6"
+              },
+              {
+                "level": 19,
+                "column_value": "+6"
+              },
+              {
+                "level": 2,
+                "column_value": "+2"
+              },
+              {
+                "level": 20,
+                "column_value": "+6"
+              },
+              {
+                "level": 3,
+                "column_value": "+2"
+              },
+              {
+                "level": 4,
+                "column_value": "+2"
+              },
+              {
+                "level": 5,
+                "column_value": "+3"
+              },
+              {
+                "level": 6,
+                "column_value": "+3"
+              },
+              {
+                "level": 7,
+                "column_value": "+3"
+              },
+              {
+                "level": 8,
+                "column_value": "+3"
+              },
+              {
+                "level": 9,
+                "column_value": "+4"
+              }
+            ]
+          },
+          {
+            "key": "srd-2024_bard_slots-1st",
+            "name": "1st",
+            "desc": "[Column data]",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "SPELL_SLOTS",
+            "gained_at": [],
+            "data_for_class_table": [
+              {
+                "level": 1,
+                "column_value": "2"
+              },
+              {
+                "level": 10,
+                "column_value": "4"
+              },
+              {
+                "level": 11,
+                "column_value": "4"
+              },
+              {
+                "level": 12,
+                "column_value": "4"
+              },
+              {
+                "level": 13,
+                "column_value": "4"
+              },
+              {
+                "level": 14,
+                "column_value": "4"
+              },
+              {
+                "level": 15,
+                "column_value": "4"
+              },
+              {
+                "level": 16,
+                "column_value": "4"
+              },
+              {
+                "level": 17,
+                "column_value": "4"
+              },
+              {
+                "level": 18,
+                "column_value": "4"
+              },
+              {
+                "level": 19,
+                "column_value": "4"
+              },
+              {
+                "level": 2,
+                "column_value": "3"
+              },
+              {
+                "level": 20,
+                "column_value": "4"
+              },
+              {
+                "level": 3,
+                "column_value": "4"
+              },
+              {
+                "level": 4,
+                "column_value": "4"
+              },
+              {
+                "level": 5,
+                "column_value": "4"
+              },
+              {
+                "level": 6,
+                "column_value": "4"
+              },
+              {
+                "level": 7,
+                "column_value": "4"
+              },
+              {
+                "level": 8,
+                "column_value": "4"
+              },
+              {
+                "level": 9,
+                "column_value": "4"
+              }
+            ]
+          },
+          {
+            "key": "srd-2024_bard_slots-2nd",
+            "name": "2nd",
+            "desc": "[Column data]",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "SPELL_SLOTS",
+            "gained_at": [],
+            "data_for_class_table": [
+              {
+                "level": 10,
+                "column_value": "3"
+              },
+              {
+                "level": 11,
+                "column_value": "3"
+              },
+              {
+                "level": 12,
+                "column_value": "3"
+              },
+              {
+                "level": 13,
+                "column_value": "3"
+              },
+              {
+                "level": 14,
+                "column_value": "3"
+              },
+              {
+                "level": 15,
+                "column_value": "3"
+              },
+              {
+                "level": 16,
+                "column_value": "3"
+              },
+              {
+                "level": 17,
+                "column_value": "3"
+              },
+              {
+                "level": 18,
+                "column_value": "3"
+              },
+              {
+                "level": 19,
+                "column_value": "3"
+              },
+              {
+                "level": 20,
+                "column_value": "3"
+              },
+              {
+                "level": 3,
+                "column_value": "2"
+              },
+              {
+                "level": 4,
+                "column_value": "3"
+              },
+              {
+                "level": 5,
+                "column_value": "3"
+              },
+              {
+                "level": 6,
+                "column_value": "3"
+              },
+              {
+                "level": 7,
+                "column_value": "3"
+              },
+              {
+                "level": 8,
+                "column_value": "3"
+              },
+              {
+                "level": 9,
+                "column_value": "3"
+              }
+            ]
+          },
+          {
+            "key": "srd-2024_bard_slots-3rd",
+            "name": "3rd",
+            "desc": "[Column data]",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "SPELL_SLOTS",
+            "gained_at": [],
+            "data_for_class_table": [
+              {
+                "level": 10,
+                "column_value": "3"
+              },
+              {
+                "level": 11,
+                "column_value": "3"
+              },
+              {
+                "level": 12,
+                "column_value": "3"
+              },
+              {
+                "level": 13,
+                "column_value": "3"
+              },
+              {
+                "level": 14,
+                "column_value": "3"
+              },
+              {
+                "level": 15,
+                "column_value": "3"
+              },
+              {
+                "level": 16,
+                "column_value": "3"
+              },
+              {
+                "level": 17,
+                "column_value": "3"
+              },
+              {
+                "level": 18,
+                "column_value": "3"
+              },
+              {
+                "level": 19,
+                "column_value": "3"
+              },
+              {
+                "level": 20,
+                "column_value": "3"
+              },
+              {
+                "level": 5,
+                "column_value": "2"
+              },
+              {
+                "level": 6,
+                "column_value": "3"
+              },
+              {
+                "level": 7,
+                "column_value": "3"
+              },
+              {
+                "level": 8,
+                "column_value": "3"
+              },
+              {
+                "level": 9,
+                "column_value": "3"
+              }
+            ]
+          },
+          {
+            "key": "srd-2024_bard_slots-4th",
+            "name": "4th",
+            "desc": "[Column data]",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "SPELL_SLOTS",
+            "gained_at": [],
+            "data_for_class_table": [
+              {
+                "level": 10,
+                "column_value": "3"
+              },
+              {
+                "level": 11,
+                "column_value": "3"
+              },
+              {
+                "level": 12,
+                "column_value": "3"
+              },
+              {
+                "level": 13,
+                "column_value": "3"
+              },
+              {
+                "level": 14,
+                "column_value": "3"
+              },
+              {
+                "level": 15,
+                "column_value": "3"
+              },
+              {
+                "level": 16,
+                "column_value": "3"
+              },
+              {
+                "level": 17,
+                "column_value": "3"
+              },
+              {
+                "level": 18,
+                "column_value": "3"
+              },
+              {
+                "level": 19,
+                "column_value": "3"
+              },
+              {
+                "level": 20,
+                "column_value": "3"
+              },
+              {
+                "level": 7,
+                "column_value": "1"
+              },
+              {
+                "level": 8,
+                "column_value": "2"
+              },
+              {
+                "level": 9,
+                "column_value": "3"
+              }
+            ]
+          },
+          {
+            "key": "srd-2024_bard_slots-5th",
+            "name": "5th",
+            "desc": "[Column data]",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "SPELL_SLOTS",
+            "gained_at": [],
+            "data_for_class_table": [
+              {
+                "level": 10,
+                "column_value": "2"
+              },
+              {
+                "level": 11,
+                "column_value": "2"
+              },
+              {
+                "level": 12,
+                "column_value": "2"
+              },
+              {
+                "level": 13,
+                "column_value": "2"
+              },
+              {
+                "level": 14,
+                "column_value": "2"
+              },
+              {
+                "level": 15,
+                "column_value": "2"
+              },
+              {
+                "level": 16,
+                "column_value": "2"
+              },
+              {
+                "level": 17,
+                "column_value": "2"
+              },
+              {
+                "level": 18,
+                "column_value": "3"
+              },
+              {
+                "level": 19,
+                "column_value": "3"
+              },
+              {
+                "level": 20,
+                "column_value": "3"
+              },
+              {
+                "level": 9,
+                "column_value": "1"
+              }
+            ]
+          },
+          {
+            "key": "srd-2024_bard_slots-6th",
+            "name": "6th",
+            "desc": "[Column data]",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "SPELL_SLOTS",
+            "gained_at": [],
+            "data_for_class_table": [
+              {
+                "level": 11,
+                "column_value": "1"
+              },
+              {
+                "level": 12,
+                "column_value": "1"
+              },
+              {
+                "level": 13,
+                "column_value": "1"
+              },
+              {
+                "level": 14,
+                "column_value": "1"
+              },
+              {
+                "level": 15,
+                "column_value": "1"
+              },
+              {
+                "level": 16,
+                "column_value": "1"
+              },
+              {
+                "level": 17,
+                "column_value": "1"
+              },
+              {
+                "level": 18,
+                "column_value": "1"
+              },
+              {
+                "level": 19,
+                "column_value": "2"
+              },
+              {
+                "level": 20,
+                "column_value": "2"
+              }
+            ]
+          },
+          {
+            "key": "srd-2024_bard_slots-7th",
+            "name": "7th",
+            "desc": "[Column data]",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "SPELL_SLOTS",
+            "gained_at": [],
+            "data_for_class_table": [
+              {
+                "level": 13,
+                "column_value": "1"
+              },
+              {
+                "level": 14,
+                "column_value": "1"
+              },
+              {
+                "level": 15,
+                "column_value": "1"
+              },
+              {
+                "level": 16,
+                "column_value": "1"
+              },
+              {
+                "level": 17,
+                "column_value": "1"
+              },
+              {
+                "level": 18,
+                "column_value": "1"
+              },
+              {
+                "level": 19,
+                "column_value": "1"
+              },
+              {
+                "level": 20,
+                "column_value": "2"
+              }
+            ]
+          },
+          {
+            "key": "srd-2024_bard_slots-8th",
+            "name": "8th",
+            "desc": "[Column data]",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "SPELL_SLOTS",
+            "gained_at": [],
+            "data_for_class_table": [
+              {
+                "level": 15,
+                "column_value": "1"
+              },
+              {
+                "level": 16,
+                "column_value": "1"
+              },
+              {
+                "level": 17,
+                "column_value": "1"
+              },
+              {
+                "level": 18,
+                "column_value": "1"
+              },
+              {
+                "level": 19,
+                "column_value": "1"
+              },
+              {
+                "level": 20,
+                "column_value": "1"
+              }
+            ]
+          },
+          {
+            "key": "srd-2024_bard_slots-9th",
+            "name": "9th",
+            "desc": "[Column data]",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "SPELL_SLOTS",
+            "gained_at": [],
+            "data_for_class_table": [
+              {
+                "level": 17,
+                "column_value": "1"
+              },
+              {
+                "level": 18,
+                "column_value": "1"
+              },
+              {
+                "level": 19,
+                "column_value": "1"
+              },
+              {
+                "level": 20,
+                "column_value": "1"
+              }
+            ]
+          },
+          {
+            "key": "srd-2024_bard_spellcasting",
+            "name": "Spellcasting",
+            "desc": "You have learned to cast spells through your bardic arts. See \"Spells\" for the rules on spellcasting. The information below details how you use those rules with Bard spells, which appear in the Bard spell list later in the class's description.\n\n**Cantrips.** You know two cantrips of your choice from the Bard spell list. *Dancing Lights* and *Vicious Mockery* are recommended.\n\nWhenever you gain a Bard level, you can replace one of your cantrips with another cantrip of your choice from the Bard spell list.\n\nWhen you reach Bard levels 4 and 10, you learn another cantrip of your choice from the Bard spell list, as shown in the Cantrips column of the Bard Features table.\n\n**Spell Slots.** The Bard Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a Long Rest.\n\n**Prepared Spells of Level 1+.** You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose four level 1 spells from the Bard spell list. *Charm Person*, *Color Spray*, *Dissonant Whispers*, and *Healing Word* are recommended.\n\nThe number of spells on your list increases as you gain Bard levels, as shown in the Prepared Spells column of the Bard Features table. Whenever that number increases, choose additional spells from the Bard spell list until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 3 Bard, your list of prepared spells can include six spells of levels 1 and 2 in any combination.\n\nIf another Bard feature gives you spells that you always have prepared, those spells don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Bard spells for you.\n\n**Changing Your Prepared Spells.** Whenever you gain a Bard level, you can replace one spell on your list with another Bard spell for which you have spell slots.\n\n**Spellcasting Ability.** Charisma is your spellcasting ability for your Bard spells.\n\n**Spellcasting Focus.** You can use a Musical Instrument as a Spellcasting Focus for your Bard spells.",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "CLASS_LEVEL_FEATURE",
+            "gained_at": [
+              {
+                "level": 1,
+                "detail": null
+              }
+            ],
+            "data_for_class_table": []
+          },
+          {
+            "key": "srd-2024_bard_superior-inspiration",
+            "name": "Superior Inspiration",
+            "desc": "When you roll Initiative, you regain expended uses of Bardic Inspiration until you have two if you have fewer than that.",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "CLASS_LEVEL_FEATURE",
+            "gained_at": [
+              {
+                "level": 18,
+                "detail": null
+              }
+            ],
+            "data_for_class_table": []
+          },
+          {
+            "key": "srd-2024_bard_words-of-creation",
+            "name": "Words of Creation",
+            "desc": "You have mastered two of the Words of Creation: the words of life and death. You therefore always have the *Power Word Heal* and *Power Word Kill* spells prepared. When you cast either spell, you can target a second creature with it if that creature is within 10 feet of the first target.",
+            "crossreferences": {
+              "to": []
+            },
+            "feature_type": "CLASS_LEVEL_FEATURE",
+            "gained_at": [
+              {
+                "level": 20,
+                "detail": null
+              }
+            ],
+            "data_for_class_table": []
+          }
+        ],
+        "hit_points": {
+          "hit_dice": "D8",
+          "hit_dice_name": "1D8 per Bard level",
+          "hit_points_at_1st_level": "8 + your Constitution modifier",
+          "hit_points_at_higher_levels": "1D8 (or 5) + your Constitution modifier per bard level after 1st"
+        },
+        "document": {
+          "name": "System Reference Document 5.2",
+          "key": "srd-2024",
+          "type": "SOURCE",
+          "display_name": "5e 2024 Rules",
+          "publisher": {
+            "name": "Wizards of the Coast",
+            "key": "wizards-of-the-coast"
+          },
+          "gamesystem": {
+            "name": "5th Edition 2024",
+            "key": "5e-2024"
+          },
+          "permalink": "https://dnd.wizards.com/resources/systems-reference-document"
+        },
+        "saving_throws": [
+          {
+            "name": "Charisma"
+          },
+          {
+            "name": "Dexterity"
+          }
+        ],
+        "subclass_of": null,
+        "name": "Bard",
+        "desc": "",
+        "hit_dice": "D8",
+        "caster_type": "FULL",
+        "primary_abilities": [],
+        "crossreferences": {
+          "to": []
+        }
+      }
+    ]
+  },
+  "https://api.open5e.com/v2/species/?document__key=srd-2024&limit=2": {
+    "count": 9,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "key": "srd-2024_dragonborn",
+        "is_subspecies": false,
+        "document": {
+          "name": "System Reference Document 5.2",
+          "key": "srd-2024",
+          "type": "SOURCE",
+          "display_name": "5e 2024 Rules",
+          "publisher": {
+            "name": "Wizards of the Coast",
+            "key": "wizards-of-the-coast"
+          },
+          "gamesystem": {
+            "name": "5th Edition 2024",
+            "key": "5e-2024"
+          },
+          "permalink": "https://dnd.wizards.com/resources/systems-reference-document"
+        },
+        "traits": [
+          {
+            "name": "Size",
+            "desc": "Medium (about 5–7 feet tall)",
+            "type": "SIZE",
+            "order": 1,
+            "crossreferences": {
+              "to": []
+            }
+          },
+          {
+            "name": "Speed",
+            "desc": "30 feet",
+            "type": "SPEED",
+            "order": 2,
+            "crossreferences": {
+              "to": []
+            }
+          },
+          {
+            "name": "Draconic Ancestry",
+            "desc": "Your lineage stems from a dragon progenitor. Choose the kind of dragon from the Draconic Ancestors table. Your choice affects your Breath Weapon and Damage Resistance traits as well as your appearance.\n\nTable: Draconic Ancestors\n\n| Dragon | Damage Type |\n|---|---|\n| Black | Acid |\n| Blue | Lightning |\n| Brass |Fire |\n| Bronze | Lightning |\n| Copper | Acid|\n|Gold|Fire|\n|Green|Poison|\n|Red|Fire|\n|Silver|Cold|\n|White|Cold|",
+            "type": null,
+            "order": 3,
+            "crossreferences": {
+              "to": []
+            }
+          },
+          {
+            "name": "Breath Weapon",
+            "desc": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus). On a failed save, a creature takes 1d10 damage of the type determined by your Draconic Ancestry trait. On a successful save, a creature takes half as much damage. This damage increases by 1d10 when you reach character levels 5 (2d10), 11 (3d10), and 17 (4d10).\n\nYou can use this Breath Weapon a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.",
+            "type": null,
+            "order": 4,
+            "crossreferences": {
+              "to": []
+            }
+          },
+          {
+            "name": "Damage Resistance",
+            "desc": "You have Resistance to the damage type determined by your Draconic Ancestry trait.",
+            "type": null,
+            "order": 5,
+            "crossreferences": {
+              "to": []
+            }
+          },
+          {
+            "name": "Darkvision",
+            "desc": "You have Darkvision with a range of 60 feet",
+            "type": null,
+            "order": 6,
+            "crossreferences": {
+              "to": []
+            }
+          },
+          {
+            "name": "Draconic Flight",
+            "desc": "When you reach character level 5, you can channel draconic magic to give yourself temporary flight. As a Bonus Action, you sprout spectral wings on your back that last for 10 minutes or until you retract the wings (no action required) or have the Incapacitated condition. During that time, you have a Fly Speed equal to your Speed. Your wings appear to be made of the same energy as your Breath Weapon. Once you use this trait, you can't use it again until you finish a Long Rest.",
+            "type": null,
+            "order": 7,
+            "crossreferences": {
+              "to": []
+            }
+          }
+        ],
+        "name": "Dragonborn",
+        "desc": "",
+        "subspecies_of": null,
+        "crossreferences": {
+          "to": []
+        }
+      },
+      {
+        "key": "srd-2024_dwarf",
+        "is_subspecies": false,
+        "document": {
+          "name": "System Reference Document 5.2",
+          "key": "srd-2024",
+          "type": "SOURCE",
+          "display_name": "5e 2024 Rules",
+          "publisher": {
+            "name": "Wizards of the Coast",
+            "key": "wizards-of-the-coast"
+          },
+          "gamesystem": {
+            "name": "5th Edition 2024",
+            "key": "5e-2024"
+          },
+          "permalink": "https://dnd.wizards.com/resources/systems-reference-document"
+        },
+        "traits": [
+          {
+            "name": "Size",
+            "desc": "Medium (about 4–5 feet tall) ",
+            "type": "SIZE",
+            "order": 1,
+            "crossreferences": {
+              "to": []
+            }
+          },
+          {
+            "name": "Speed",
+            "desc": "30 feet",
+            "type": "SPEED",
+            "order": 2,
+            "crossreferences": {
+              "to": []
+            }
+          },
+          {
+            "name": "Darkvision",
+            "desc": "You have Darkvision with a range of 120 feet.",
+            "type": null,
+            "order": 3,
+            "crossreferences": {
+              "to": []
+            }
+          },
+          {
+            "name": "Dwarven Resilience",
+            "desc": "You have Resistance to Poison damage. You also have Advantage on saving throws you make to avoid or end the Poisoned condition.",
+            "type": null,
+            "order": 4,
+            "crossreferences": {
+              "to": []
+            }
+          },
+          {
+            "name": "Dwarven Toughness",
+            "desc": "Your Hit Point maximum increases by 1, and it increases by 1 again whenever you gain a level.",
+            "type": null,
+            "order": 5,
+            "crossreferences": {
+              "to": []
+            }
+          },
+          {
+            "name": "Stonecunning",
+            "desc": "As a Bonus Action, you gain Tremorsense with a range of 60 feet for 10 minutes. You must be on a stone surface or touching a stone surface to use this Tremorsense. The stone can be natural or worked.\n\nYou can use this Bonus Action a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.",
+            "type": null,
+            "order": 6,
+            "crossreferences": {
+              "to": []
+            }
+          }
+        ],
+        "name": "Dwarf",
+        "desc": "",
+        "subspecies_of": null,
+        "crossreferences": {
+          "to": []
+        }
+      }
+    ]
+  },
+  "https://api.open5e.com/v2/backgrounds/?document__key=srd-2024&limit=2": {
+    "count": 4,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "key": "srd-2024_acolyte",
+        "benefits": [
+          {
+            "name": "Ability Scores",
+            "desc": "Intelligence, Wisdom, Charisma",
+            "type": "ability_score",
+            "crossreferences": {
+              "to": []
+            }
+          },
+          {
+            "name": "Equipment",
+            "desc": "*Choose A or B:* (A) Calligrapher's Supplies, Book (prayers), Holy Symbol, Parchment (10 sheets), Robe, 8 GP; or (B) 50 GP",
+            "type": "equipment",
+            "crossreferences": {
+              "to": []
+            }
+          },
+          {
+            "name": "Feat",
+            "desc": "Magic Initiate (Cleric)",
+            "type": "feat",
+            "crossreferences": {
+              "to": [
+                {
+                  "anchor": "Magic Initiate",
+                  "url": "https://api.open5e.com/v2/feats/srd-2024_magic-initiate/"
+                }
+              ]
+            }
+          },
+          {
+            "name": "Skill Proficiencies",
+            "desc": "Insight and Religion",
+            "type": "skill_proficiency",
+            "crossreferences": {
+              "to": []
+            }
+          },
+          {
+            "name": "Tool Proficiency",
+            "desc": "Calligrapher's Supplies",
+            "type": "tool_proficiency",
+            "crossreferences": {
+              "to": []
+            }
+          }
+        ],
+        "document": {
+          "name": "System Reference Document 5.2",
+          "key": "srd-2024",
+          "type": "SOURCE",
+          "display_name": "5e 2024 Rules",
+          "publisher": {
+            "name": "Wizards of the Coast",
+            "key": "wizards-of-the-coast"
+          },
+          "gamesystem": {
+            "name": "5th Edition 2024",
+            "key": "5e-2024"
+          },
+          "permalink": "https://dnd.wizards.com/resources/systems-reference-document"
+        },
+        "name": "Acolyte",
+        "desc": "",
+        "crossreferences": {
+          "to": []
+        }
+      },
+      {
+        "key": "srd-2024_criminal",
+        "benefits": [
+          {
+            "name": "Ability Scores",
+            "desc": "Dexterity, Constitution, Intelligence",
+            "type": "ability_score",
+            "crossreferences": {
+              "to": []
+            }
+          },
+          {
+            "name": "Equipment",
+            "desc": "*Choose A or B:* (A) 2 Daggers, Thieves' Tools, Crowbar, 2 Pouches, Traveler's Clothes, 16 GP; or (B) 50 GP",
+            "type": "equipment",
+            "crossreferences": {
+              "to": []
+            }
+          },
+          {
+            "name": "Feat",
+            "desc": "Alert",
+            "type": "feat",
+            "crossreferences": {
+              "to": []
+            }
+          },
+          {
+            "name": "Skill Proficiencies",
+            "desc": "Sleight of Hand and Stealth",
+            "type": "skill_proficiency",
+            "crossreferences": {
+              "to": []
+            }
+          },
+          {
+            "name": "Tool Proficiency",
+            "desc": "Thieves' Tools",
+            "type": "tool_proficiency",
+            "crossreferences": {
+              "to": []
+            }
+          }
+        ],
+        "document": {
+          "name": "System Reference Document 5.2",
+          "key": "srd-2024",
+          "type": "SOURCE",
+          "display_name": "5e 2024 Rules",
+          "publisher": {
+            "name": "Wizards of the Coast",
+            "key": "wizards-of-the-coast"
+          },
+          "gamesystem": {
+            "name": "5th Edition 2024",
+            "key": "5e-2024"
+          },
+          "permalink": "https://dnd.wizards.com/resources/systems-reference-document"
+        },
+        "name": "Criminal",
+        "desc": "",
+        "crossreferences": {
+          "to": []
+        }
+      }
+    ]
+  },
+  "https://api.open5e.com/v2/feats/?document__key=srd-2024&limit=2": {
+    "count": 17,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "key": "srd-2024_ability-score-improvement",
+        "has_prerequisite": true,
+        "benefits": [
+          {
+            "desc": "Increase one ability score of your choice by 2, or increase two ability scores of your choice by 1. This feat can't increase an ability score above 20."
+          },
+          {
+            "desc": "You can take this feat more than once."
+          }
+        ],
+        "document": {
+          "name": "System Reference Document 5.2",
+          "key": "srd-2024",
+          "type": "SOURCE",
+          "display_name": "5e 2024 Rules",
+          "publisher": {
+            "name": "Wizards of the Coast",
+            "key": "wizards-of-the-coast"
+          },
+          "gamesystem": {
+            "name": "5th Edition 2024",
+            "key": "5e-2024"
+          },
+          "permalink": "https://dnd.wizards.com/resources/systems-reference-document"
+        },
+        "name": "Ability Score Improvement",
+        "desc": "",
+        "prerequisite": "Level 4+",
+        "type": "General",
+        "crossreferences": {
+          "to": []
+        }
+      },
+      {
+        "key": "srd-2024_alert",
+        "has_prerequisite": false,
+        "benefits": [
+          {
+            "desc": "When you roll Initiative, you can add your Proficiency Bonus to the roll."
+          },
+          {
+            "desc": "Immediately after you roll Initiative, you can swap your Initiative with the Initiative of one willing ally in the same combat. You can't make this swap if you or the ally has the Incapacitated condition."
+          }
+        ],
+        "document": {
+          "name": "System Reference Document 5.2",
+          "key": "srd-2024",
+          "type": "SOURCE",
+          "display_name": "5e 2024 Rules",
+          "publisher": {
+            "name": "Wizards of the Coast",
+            "key": "wizards-of-the-coast"
+          },
+          "gamesystem": {
+            "name": "5th Edition 2024",
+            "key": "5e-2024"
+          },
+          "permalink": "https://dnd.wizards.com/resources/systems-reference-document"
+        },
+        "name": "Alert",
+        "desc": "You gain the following benefits.",
+        "prerequisite": "",
+        "type": "Origin",
+        "crossreferences": {
+          "to": []
+        }
+      }
+    ]
+  },
+  "https://api.open5e.com/v2/rulesets/?document__key=srd-2024&limit=2": {
+    "count": 11,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "name": "Combat",
+        "key": "srd-2024_combat",
+        "document": {
+          "name": "System Reference Document 5.2",
+          "key": "srd-2024",
+          "type": "SOURCE",
+          "display_name": "5e 2024 Rules",
+          "publisher": {
+            "name": "Wizards of the Coast",
+            "key": "wizards-of-the-coast"
+          },
+          "gamesystem": {
+            "name": "5th Edition 2024",
+            "key": "5e-2024"
+          },
+          "permalink": "https://dnd.wizards.com/resources/systems-reference-document"
+        },
+        "desc": "Adventurers encounter many dangerous monsters and nefarious villains. In those moments, combat often breaks out.",
+        "rules": [
+          {
+            "key": "srd-2024_combat_the-order-of-combat",
+            "name": "The Order of Combat",
+            "desc": "A typical combat encounter is a clash between two sides: a flurry of weapon swings, feints, parries, footwork, and spellcasting. The game organizes combat into a cycle of rounds and turns. A round represents about 6 seconds in the game world. During a round, each participant in a battle takes a turn. The order of turns is determined at the beginning of combat when everyone rolls Initiative. Once everyone has taken a turn, the fight continues to the next round if neither side is defeated.\n\n## Combat Step by Step\n\nCombat unfolds in these steps:\n\n1. **Establish Positions.** The Game Master determines where all the characters and monsters are located. Given the adventurers’ marching order or their stated positions in the room or other location, the GM figures out where the adversaries are—how far away and in what direction.\n2. **Roll Initiative.** Everyone involved in the combat encounter rolls Initiative, determining the order of combatants’ turns.\n3. **Take Turns.** Each participant in the battle takes a turn in Initiative order. When everyone involved in the combat has had a turn, the round ends. Repeat this step until the fighting stops.\n\n## Initiative\n\nInitiative determines the order of turns during combat. When combat starts, every participant rolls Initiative; they make a Dexterity check that determines their place in the Initiative order. The GM rolls for monsters. For a group of identical creatures, the GM makes a single roll, so each member of the group has the same Initiative.\n\n**Surprise.** If a combatant is surprised by combat starting, that combatant has Disadvantage on their Initiative roll. For example, if an ambusher starts combat while hidden from a foe who is unaware that combat is starting, that foe is surprised.\n\n**Initiative Order.** A combatant’s check total is called their Initiative count, or Initiative for short. The GM ranks the combatants, from highest to lowest Initiative. This is the order in which they act during each round. The Initiative order remains the same from round to round.\n\n**Ties.** If a tie occurs, the GM decides the order among tied monsters, and the players decide the order among tied characters. The GM decides the order if the tie is between a monster and a player character.\n\n## Your Turn\n\nOn your turn, you can move a distance up to your Speed and take one action. You decide whether to move first or take your action first.\n\nThe main actions you can take are listed in “Actions” earlier in “Playing the Game.” A character’s features and a monster’s stat block also provide action options. “Movement and Position” later in “Playing the Game” gives the rules for movement.\n\n**Communicating.** You can communicate however you are able—through brief utterances and gestures—as you take your turn. Doing so uses neither your action nor your move.\n\nExtended communication, such as a detailed explanation of something or an attempt to persuade a foe, requires an action. The Influence action is the main way you try to influence a monster.\n\n**Interacting with Things.** You can interact with one object or feature of the environment for free, during either your move or action. For example, you could open a door during your move as you stride toward a foe.\n\nIf you want to interact with a second object, you need to take the Utilize action. Some magic items and other special objects always require an action to use, as stated in their descriptions.\n\nThe GM might require you to use an action for any of these activities when it needs special care or when it presents an unusual obstacle. For instance, the GM might require you to take the Utilize action to open a stuck door or turn a crank to lower a drawbridge.\n\n**Doing Nothing on Your Turn.** You can forgo moving, taking an action, or doing anything at all on your turn. If you can’t decide what to do, consider taking the defensive Dodge action or the Ready action to delay acting.\n\n## Ending Combat\n\nCombat ends when one side or the other is defeated, which can mean the creatures are killed or knocked out or have surrendered or fled. Combat can also end when both sides agree to end it.",
+            "index": 1,
+            "initialHeaderLevel": 2,
+            "document": "srd-2024",
+            "ruleset": "srd-2024_combat"
+          },
+          {
+            "key": "srd-2024_combat_playing-on-a-grid",
+            "name": "Playing on a Grid",
+            "desc": "If you play using a square grid and miniatures or other tokens, follow these rules.\n\n**Squares.** Each square represents 5 feet.\n\n**Speed.** Rather than moving foot by foot, move square by square on the grid, using your Speed in 5-foot segments. You can translate your Speed into squares by dividing it by 5. For example, a Speed of 30 feet translates into 6 squares. If you use a grid often, consider writing your Speed in squares on your character sheet.\n\n**Entering a Square.** To enter a square, you must have enough movement left to pay for entering. It costs 1 square of movement to enter an unoccupied square that’s adjacent to your space (orthogonally or diagonally adjacent). A square of Difficult Terrain costs 2 squares to enter. Other effects might make a square cost even more.\n\n**Corners.** Diagonal movement can’t cross the corner of a wall, a large tree, or another terrain feature that fills its space.\n\n**Ranges.** To determine the range on a grid between two things—whether creatures or objects—count squares from a square adjacent to one of them and stop counting in the space of the other one. Count by the shortest route.",
+            "index": 2,
+            "initialHeaderLevel": 2,
+            "document": "srd-2024",
+            "ruleset": "srd-2024_combat"
+          },
+          {
+            "key": "srd-2024_combat_movement-and-position",
+            "name": "Movement and Position",
+            "desc": "On your turn, you can move a distance equal to your Speed or less. Or you can decide not to move.\n\nYour movement can include climbing, crawling, jumping, and swimming (each explained in “Rules Glossary”). These different modes of movement can be combined with your regular movement, or they can constitute your entire move.\n\nHowever you’re moving with your Speed, you deduct the distance of each part of your move from it until it is used up or until you are done moving, whichever comes first.\n\nA character’s Speed is determined during character creation. A monster’s Speed is noted in the monster’s stat block. See “Rules Glossary” for more about Speed as well as about special speeds, such as a Climb Speed, Fly Speed, or Swim Speed.\n\n## Difficult Terrain\n\nCombatants are often slowed down by Difficult Terrain. Low furniture, rubble, undergrowth, steep stairs, snow, and shallow bogs are examples of Difficult Terrain.\n\nEvery foot of movement in Difficult Terrain costs 1 extra foot, even if multiple things in a space count as Difficult Terrain.\n\n## Breaking Up Your Move\n\nYou can break up your move, using some of its movement before and after any action, Bonus Action, or Reaction you take on the same turn. For example, if you have a Speed of 30 feet, you could go 10 feet, take an action, and then go 20 feet.\n\n## Dropping Prone\n\nOn your turn, you can give yourself the Prone condition (see “Rules Glossary”) without using an action or any of your Speed, but you can’t do so if your Speed is 0.\n\n## Creature Size\n\nA creature belongs to a size category, which determines the width of the square space the creature occupies on a map, as shown on the Creature Size and Space table. That table lists the sizes from smallest (Tiny) to largest (Gargantuan). A creature’s space is the area that it effectively controls in combat and the area it needs to fight effectively.\n\nA character’s size is determined by species, and a monster’s size is specified in the monster’s stat block.\n\nTable: Creature Size and Space\n\n|Size|Space (Feet)|Space (Squares)|\n|---|---|---|\n|Tiny|2½ by 2½ feet|4 per square|\n|Small|5 by 5 feet|1 square|\n|Medium|5 by 5 feet|1 square|\n|Large|10 by 10 feet|4 squares (2 by 2)|\n|Huge|15 by 15 feet|9 squares (3 by 3)|\n|Gargantuan|20 by 20 feet|16 squares (4 by 4)|\n\n## Moving around Other Creatures\n\nDuring your move, you can pass through the space of an ally, a creature that has the Incapacitated condition (see “Rules Glossary”), a Tiny creature, or a creature that is two sizes larger or smaller than you.\n\nAnother creature’s space is Difficult Terrain for you unless that creature is Tiny or your ally.\n\nYou can’t willingly end a move in a space occupied by another creature. If you somehow end a turn in a space with another creature, you have the Prone condition (see “Rules Glossary”) unless you are Tiny or are of a larger size than the other creature.",
+            "index": 3,
+            "initialHeaderLevel": 2,
+            "document": "srd-2024",
+            "ruleset": "srd-2024_combat"
+          },
+          {
+            "key": "srd-2024_combat_making-an-attack",
+            "name": "Making an Attack",
+            "desc": "When you take the Attack action, you make an attack. Some other actions, Bonus Actions, and Reactions also let you make an attack. Whether you strike with a Melee weapon, fire a Ranged weapon, or make an attack roll as part of a spell, an attack has the following structure:\n\n1. **Choose a Target.** Pick a target within your attack’s range: a creature, an object, or a location.\n2. **Determine Modifiers.** The GM determines whether the target has Cover (see the next section) and whether you have Advantage or Disadvantage against the target. In addition, spells, special abilities, and other effects can apply penalties or bonuses to your attack roll.\n3. **Resolve the Attack.** Make the attack roll, as detailed earlier in “Playing the Game.” On a hit, you roll damage unless the particular attack has rules that specify otherwise. Some attacks cause special effects in addition to or instead of damage.",
+            "index": 4,
+            "initialHeaderLevel": 2,
+            "document": "srd-2024",
+            "ruleset": "srd-2024_combat"
+          },
+          {
+            "key": "srd-2024_combat_unseen-attackers-and-target",
+            "name": "Unseen Attackers and Targets",
+            "desc": "When you make an attack roll against a target you can’t see, you have Disadvantage on the roll. This is true whether you’re guessing the target’s location or targeting a creature you can hear but not see. If the target isn’t in the location you targeted, you miss.\n\nWhen a creature can’t see you, you have Advantage on attack rolls against it.\n\nIf you are hidden when you make an attack roll, you give away your location when the attack hits or misses.",
+            "index": 5,
+            "initialHeaderLevel": 2,
+            "document": "srd-2024",
+            "ruleset": "srd-2024_combat"
+          },
+          {
+            "key": "srd-2024_combat_cover",
+            "name": "Cover",
+            "desc": "Walls, trees, creatures, and other obstacles can provide cover, making a target more difficult to harm. As detailed in the Cover table, there are three degrees of cover, each of which gives a different benefit to a target.\n\nA target can benefit from cover only when an attack or other effect originates on the opposite side of the cover. If a target is behind multiple sources of cover, only the most protective degree of cover applies; the degrees aren’t added together. For example, if a target is behind a creature that gives HalfCover and a tree trunk that gives Three-Quarters Cover, the target has Three-Quarters Cover.\n\n|Degree|Benefit to Target|Offered By …|\n|---|---|---|\n|Half|+2 bonus to AC and Dexterity saving throws|Another creature or an object that covers at least half of the target|\n|Three Quarters|+5 bonus to AC and Dexterity saving throws|An object that covers at least three-quarters of the target|\n|Total|Can’t be targeted directly|An object that covers the whole target|",
+            "index": 6,
+            "initialHeaderLevel": 2,
+            "document": "srd-2024",
+            "ruleset": "srd-2024_combat"
+          },
+          {
+            "key": "srd-2024_combat_ranged-attacks",
+            "name": "Ranged Attacks",
+            "desc": "When you make a ranged attack, you fire a bow, hurl an axe, or otherwise send projectiles to strike a foe at a distance. Many spells also involve making a ranged attack.\n\n## Range\n\nYou can make ranged attacks only against targets within a specified range. If a ranged attack, such as one made with a spell, has a single range, you can’t attack a target beyond this range.\n\nSome ranged attacks, such as those made with a Longbow, have two ranges. The smaller number is the normal range, and the larger number is the long range. Your attack roll has Disadvantage when your target is beyond normal range, and you can’t attack a target beyond long range.\n\n## Ranged Attacks in Close Combat\n\nAiming a ranged attack is more difficult when a foe is next to you. When you make a ranged attack roll with a weapon, a spell, or some other means, you have Disadvantage on the roll if you are within 5 feet of an enemy who can see you and doesn’t have the Incapacitated condition (see “Rules Glossary”).",
+            "index": 7,
+            "initialHeaderLevel": 2,
+            "document": "srd-2024",
+            "ruleset": "srd-2024_combat"
+          },
+          {
+            "key": "srd-2024_combat_melee-attacks",
+            "name": "Melee Attacks",
+            "desc": "A melee attack allows you to attack a target within your reach. A melee attack typically uses a hand-held weapon or an Unarmed Strike. Many monsters make melee attacks with claws, teeth, or other body parts. A few spells also involve melee attacks.\n\n## Reach\n\nA creature has a 5-foot reach and can thus attack targets within 5 feet when making a melee attack. Certain creatures have melee attacks with a reach greater than 5 feet, as noted in their descriptions.\n\n## Opportunity Attacks\n\nCombatants watch for enemies to drop their guard. If you move heedlessly past your foes, you put yourself in danger by provoking an Opportunity Attack.\n\n**Avoiding Opportunity Attacks.** You can avoid provoking an Opportunity Attack by taking the Disengage action. You also don’t provoke an Opportunity Attack when you Teleport or when you are moved without using your movement, action, Bonus Action, or Reaction. For example, you don’t provoke an Opportunity Attack if an explosion hurls you out of a foe’s reach or if you fall past an enemy.\n\n**Making an Opportunity Attack.** You can make an Opportunity Attack when a creature that you can see leaves your reach. To make the attack, take a Reaction to make one melee attack with a weapon or an Unarmed Strike against that creature. The attack occurs right before it leaves your reach.",
+            "index": 8,
+            "initialHeaderLevel": 2,
+            "document": "srd-2024",
+            "ruleset": "srd-2024_combat"
+          },
+          {
+            "key": "srd-2024_combat_mounted-combat",
+            "name": "Mounted Combat",
+            "desc": "A willing creature that is at least one size larger than a rider and that has an appropriate anatomy can serve as a mount, using the following rules.\n\n## Mounting and Dismounting\n\nDuring your move, you can mount a creature that is within 5 feet of you or dismount. Doing so costs an amount of movement equal to half your Speed (round down). For example, if your Speed is 30 feet, you spend 15 feet of movement to mount a horse.\n\n## Controlling a Mount\n\nYou can control a mount only if it has been trained to accept a rider. Domesticated horses, mules, and similar creatures have such training.\n\nThe Initiative of a controlled mount changes to match yours when you mount it. It moves on your turn as you direct it, and it has only three action options during that turn: Dash, Disengage, and Dodge. A controlled mount can move and act even on the turn that you mount it.\n\nIn contrast, an independent mount—one that lets you ride but ignores your control—retains its place in the Initiative order and moves and acts as it likes.\n\n## Falling Off\n\nIf an effect is about to move your mount against its will while you’re on it, you must succeed on a DC 10 Dexterity saving throw or fall off, landing with the Prone condition (see “Rules Glossary”) in an unoccupied space within 5 feet of the mount.\n\nWhile mounted, you must make the same save if you’re knocked Prone or the mount is.",
+            "index": 9,
+            "initialHeaderLevel": 2,
+            "document": "srd-2024",
+            "ruleset": "srd-2024_combat"
+          },
+          {
+            "key": "srd-2024_combat_underwater-combat",
+            "name": "Underwater Combat",
+            "desc": "A fight underwater follows these rules.\n\n## Impeded Weapons\n\nWhen making a melee attack roll with a weapon underwater, a creature that lacks a Swim Speed has Disadvantage on the attack roll unless the weapon deals Piercing damage. A ranged attack roll with a weapon underwater automatically misses a target beyond the weapon’s normal range, and the attack roll has Disadvantage against a target within normal range.\n\n## Fire Resistance\n\nAnything underwater has Resistance to Fire damage (explained in “Damage and Healing”).",
+            "index": 10,
+            "initialHeaderLevel": 2,
+            "document": "srd-2024",
+            "ruleset": "srd-2024_combat"
+          }
+        ],
+        "crossreferences": {
+          "to": []
+        }
+      },
+      {
+        "name": "Create Your Character",
+        "key": "srd-2024_create-your-character",
+        "document": {
+          "name": "System Reference Document 5.2",
+          "key": "srd-2024",
+          "type": "SOURCE",
+          "display_name": "5e 2024 Rules",
+          "publisher": {
+            "name": "Wizards of the Coast",
+            "key": "wizards-of-the-coast"
+          },
+          "gamesystem": {
+            "name": "5th Edition 2024",
+            "key": "5e-2024"
+          },
+          "permalink": "https://dnd.wizards.com/resources/systems-reference-document"
+        },
+        "desc": "Here are the steps to make a character; each step is explored in detail:\n\n1. **Choose a Class.** Every adventurer is a member of a class. A class broadly describes a character's vocation, special talents, and favored tactics.\n\n2. **Determine Origin.** A character's origin includes two elements: background and species. How did the character spend the years leading up to a life of adventure? Who are the character's ancestors? You can also choose your character's languages.\n\n3. **Determine Ability Scores.** Much of what your character does in the game depends on the character's six abilities.\n\n4. **Choose an Alignment.** Alignment is a shorthand for your character's moral compass.\n\n5. **Fill in Details.** Using the choices you've made, fill in the remaining details on your character sheet.",
+        "rules": [
+          {
+            "key": "srd-2024_create-your-character_choose-class",
+            "name": "Step 1: Choose Class",
+            "desc": "Choose a class, and write it on your character sheet. The Class Overview table summarizes the classes. See \"Classes\" for the classes' details.\n\n| Class | Likes | Primary Ability | Complexity |\n|---|---|---|---|\n| Barbarian | Battle | Strength | Average |\n| Bard | Performing | Charisma | High |\n| Cleric | Gods | Wisdom | Average |\n| Druid | Nature | Wisdom | High |\n| Fighter | Weapons | Strength or Dexterity | Low |\n| Monk | Unarmed combat | Dexterity and Wisdom | High |\n| Paladin | Defense | Strength and Charisma | Average |\n| Ranger | Survival | Dexterity and Wisdom | Average |\n| Rogue | Stealth | Dexterity | Low |\n| Sorcerer | Power | Charisma | High |\n| Warlock | Occult lore | Charisma | High |\n| Wizard | Spellbooks | Intelligence | Average|\n\n### Write Your Level\n\nWrite your character's level on your character sheet. Typically, a character starts at level 1 and advances in level by adventuring and gaining Experience Points (XP).\n\n**Write Your XP.** Also record your Experience Points. A level 1 character has 0 XP.\n\n**Starting at a Higher Level.** Your GM might start you at a higher level. If you start at level 3 or higher, write your chosen subclass on your character sheet. See the \"Starting at Higher Levels\" section later in \"Character Creation\" for more information.\n\n### Note Armor Training\n\nYour class might give you training with certain categories of armor. Note your armor training on your character sheet. Armor training with a kind of armor means you can wear that armor effectively, gaining defensive bonuses from it. The categories of armor are described in \"Equipment.\"",
+            "index": 1,
+            "initialHeaderLevel": 2,
+            "document": "srd-2024",
+            "ruleset": "srd-2024_create-your-character"
+          },
+          {
+            "key": "srd-2024_create-your-character_character-origin",
+            "name": "Step 2: Character Origin",
+            "desc": "Determining your character's origin involves choosing a background, a species, and two languages.\n\nA character's background represents the place and occupation that were most formative for the character. The combination of background, species, and languages provides fertile soil for your imagination as you ponder your character's earliest days.\n\n### Choose a Background\n\nChoose your character's background, and write it on your character sheet. You can choose any of the backgrounds detailed in \"Character Origins,\" and your GM might offer additional backgrounds as options.\n\nThe background you choose influences step 3, when you determine your character's ability scores. If you're having trouble choosing, the Ability Scores and Backgrounds table shows which backgrounds benefit which ability scores. Look for your class's primary ability there.\n\n| Ability | Background |\n|---|---|\n| Strength | Soldier |\n| Dexterity | Soldier |\n| Constitution | Soldier |\n| Intelligence | Acolyte |\n| Wisdom | Acolyte |\n| Charisma | Acolyte |\n\n**Record Your Feat.** A background gives you a feat, which grants your character particular capabilities. Feats are detailed in \"Feats.\" Write the feat on your character sheet.\n\n**Note Proficiencies.** Your background gives proficiency in two skills and with one tool. Record this information on your character sheet.\n\nYour class also gives proficiencies. Check your class description in \"Classes\" and note the proficiencies on your character sheet.\n\nThe features table in your class description shows your Proficiency Bonus (described in \"Playing the Game\"), which is +2 for a level 1 character. Note this number on your character sheet. You'll fill in other numbers connected to these proficiencies in step 5.\n\n### Choose Starting Equipment\n\nYour background and class both provide starting equipment. Any coins that you gain at this step can be immediately spent on equipment from \"Equipment.\"\n\nRecord your chosen equipment on your character sheet. Equipment is described in \"Equipment\", but for now you can just write it all down and look up the specifics in \"Equipment\" later. Note any coins you have left after purchasing your equipment.\n\n### Choose a Species\n\nChoose a species for your character. The following species options are detailed in \"Character Origins\": Dragonborn, Dwarf, Elf, Gnome, Goliath, Halfling, Human, Orc, and Tiefling. Once you've chosen a species, write it on your character sheet. Then record your species' traits.\n\nYour character's size and Speed are determined by the character's species; record these in the appropriate places on your character sheet as well (you may write just the first letter of your size).\n\n### Imagine Your Past and Present\n\nLet your character's background and species inspire how you imagine their past. That past fed into the character's present. With that in mind, consider answers to the following questions as your character:\n\n- Who raised you?\n- Who was your dearest childhood friend?\n- Did you grow up with a pet?\n- Have you fallen in love? If so, with whom?\n- Did you join an organization, such as a guild or religion? If so, are you still a member of it?\n- What elements of your past inspire you to go on adventures now?\n\n### Choose Languages\n\nYour character knows at least three languages: Common plus two languages you roll or choose from the Standard Languages table. Knowledge of a language means your character can communicate in it, read it, and write it. Your class and other features might also give you languages.\n\nThe Standard Languages table lists languages that are widespread in the setting. Every player character knows Common. The other standard languages originated with the first members of the most prominent species in the setting and have since spread widely.\n\n| 1d12| Language|\n|---|---|\n| — | Common |\n| 1 | Common Sign Language |\n| 2 | Draconic |\n| 3–4 | Dwarvish |\n| 5–6 | Elvish|\n| 7 |Giant|\n|8|Gnomish|\n|9|Goblin|\n|10–11|Halfling|\n|12|Orc|\n\nThe Rare Languages table lists languages that are either secret or derived from other planes of existence and thus less widespread in the worlds of the Material Plane. Some features let a character learn a rare language.\n\n| Language| Language|\n|---|---|\n| Abyssal| Primordial*|\n| Celestial| Sylvan|\n| Deep Speech | Thieves' Cant |\n| Druidic | Undercommon |\n| Infernal| |\n\n (Primordial includes the Aquan, Auran, Ignan, and Terran dialects. Creatures that know one of these dialects can communicate with those that know a different one.)",
+            "index": 2,
+            "initialHeaderLevel": 2,
+            "document": "srd-2024",
+            "ruleset": "srd-2024_create-your-character"
+          },
+          {
+            "key": "srd-2024_create-your-character_ability-scores",
+            "name": "Step 3: Ability Scores",
+            "desc": "To determine your character's ability scores, you first generate a set of six numbers using the instructions below and then assign them to your six abilities. \"Playing the Game\" explains what each ability means.\n\n### Generate Your Scores\n\nDetermine your ability scores by using one of the following three methods. Your GM might prefer you to use a particular one.\n\n**Standard Array.** Use the following six scores for your abilities: 15, 14, 13, 12, 10, 8.\n\n**Random Generation.** Roll four d6s and record the total of the highest three dice. Do this five more times, so you have six numbers.\n\n**Point Cost.** You have 27 points to spend on your ability scores. The cost of each score is shown on the Ability Score Point Costs table. For example, a score of 14 costs 7 of your 27 points.\n\n| Score | Cost | Score | Cost |\n|---|---|---|---|\n| 8| 0| 12| 4|\n| 9| 1| 13| 5|\n| 10| 2| 14| 7|\n| 11| 3| 15| 9|\n\n### Assign Ability Scores\n\nOnce you've generated six scores, assign them to Strength, Dexterity, Constitution, Intelligence, Wisdom, and Charisma, keeping in mind your class's primary ability. Fill in the ability modifiers as well.\n\nIf you're using the Standard Array option, consult the Standard Array by Class table for suggestions on where to assign scores for your character's class. The table puts the highest scores in a class's main abilities. If you used a different method to generate the scores, you may still use this table to guide where you place your highest and lowest scores.\n\n| Class | Str. | Dex. | Con. | Int. | Wis. | Cha. |\n|---|---|---|---|---|---|---|\n| Barbarian | 15| 13| 14| 10| 12| 8|\n| Bard| 8| 14| 12| 13| 10| 15|\n| Cleric| 14| 8| 13| 10| 15| 12|\n| Druid| 8| 12| 14| 13| 15| 10|\n| Fighter| 15| 14| 13| 8| 10| 12|\n| Monk| 12| 15| 13| 10| 14| 8|\n| Paladin| 15| 10| 13| 8| 12| 14|\n| Ranger| 12| 15| 13| 8| 14| 10|\n| Rogue| 12| 15| 13| 14| 10| 8|\n| Sorcerer| 10| 13| 14| 8| 12| 15|\n| Warlock| 8| 14| 13| 12| 10| 15|\n| Wizard| 8| 12| 13| 15| 14| 10|\n\n### Adjust Ability Scores\n\nAfter assigning your ability scores, adjust them according to your background. Your background lists three abilities; increase one of those scores by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20.\n\nSome players like to increase their class's primary ability, while others prefer to increase a low score.\n\n### Determine Ability Modifiers\n\nFinally, determine your ability modifiers using the Ability Scores and Modifiers table. Write the modifier next to each of your scores.\n\n| Score | Modifier | Score | Modifier |\n|---|---|---|---|\n| 3| −4| 12–13 | +1|\n| 4–5| −3| 14–15| +2|\n| 6–7| −2| 16–17 | +3|\n| 8–9| −1| 18–19 | +4|\n| 10–11| +0| 20| +5|",
+            "index": 3,
+            "initialHeaderLevel": 2,
+            "document": "srd-2024",
+            "ruleset": "srd-2024_create-your-character"
+          },
+          {
+            "key": "srd-2024_create-your-character_alignment",
+            "name": "Step 4: Alignment",
+            "desc": "Choose your character's alignment from the options below, and note it on your character sheet.\n\nThe game assumes that player characters aren't of an evil alignment. Check with your GM before making an evil character.\n\n### The Nine Alignments\n\nA creature's alignment broadly describes its ethical attitudes and ideals. Alignment is a combination of two factors: one identifies morality (good, evil, or neutral), and the other describes attitudes toward order (lawful, chaotic, or neutral).\n\nThe summaries of the alignments below describe the typical behavior of a creature with that alignment; individuals can vary from that behavior.\n\n_Lawful Good (LG)._ Lawful Good creatures endeavor to do the right thing as expected by society. Someone who fights injustice and protects the innocent without hesitation is probably Lawful Good.\n\n_Neutral Good (NG)._ Neutral Good creatures do the best they can, working within rules but not feeling bound by them. A kindly person who helps others according to their needs is probably Neutral Good.\n\n_Chaotic Good (CG)._ Chaotic Good creatures act as their conscience directs with little regard for what others expect. A rebel who waylays a cruel baron's tax collectors and uses the stolen money to help the poor is probably Chaotic Good.\n\n_Lawful Neutral (LN)._ Lawful Neutral individuals act in accordance with law, tradition, or personal codes. Someone who follows a disciplined rule of life—and isn't swayed either by the demands of those in need or by the temptations of evil—is probably Lawful Neutral.\n\n_Neutral (N)._ Neutral is the alignment of those who prefer to avoid moral questions and don't take sides, doing what seems best at the time. Someone who's bored by moral debate is probably Neutral.\n\n_Chaotic Neutral (CN)._ Chaotic Neutral creatures follow their whims, valuing their personal freedom above all else. A scoundrel who wanders the land living by their wits is probably Chaotic Neutral.\n\n_Lawful Evil (LE)._ Lawful Evil creatures methodically take what they want within the limits of a code of tradition, loyalty, or order. An aristocrat exploiting citizens while scheming for power is probably Lawful Evil.\n\n_Neutral Evil (NE)._ Neutral Evil is the alignment of those who are untroubled by the harm they cause as they pursue their desires. A criminal who robs and murders as they please is probably Neutral Evil.\n\n_Chaotic Evil (CE)._ Chaotic Evil creatures act with arbitrary violence, spurred by their hatred or bloodlust. A villain pursuing schemes of vengeance and havoc is probably Chaotic Evil.\n\n_Unaligned Creatures._ Most creatures that lack the capacity for rational thought don't have alignments; they are unaligned. Sharks are savage predators, for example, but they aren't evil; they are unaligned.",
+            "index": 4,
+            "initialHeaderLevel": 2,
+            "document": "srd-2024",
+            "ruleset": "srd-2024_create-your-character"
+          },
+          {
+            "key": "srd-2024_create-your-character_character-creation-details",
+            "name": "Step 5: Character Creation Details",
+            "desc": "Now fill in the rest of your character sheet.\n\n### Record Class Features\n\nLook at your class's feature table in \"Classes,\" and write down the level 1 features. The class features are detailed there too.\n\nSome class features offer choices. Make sure to read all your features and make any offered choices.\n\n### Fill In Numbers\n\nNote these numbers on your character sheet.\n\n**Saving Throws.** For the saving throws you have proficiency in, add your Proficiency Bonus to the appropriate ability modifier and note the total. Some players also like to note the modifier for saving throws they're not proficient in, which is just the relevant ability modifier.\n\n**Skills.** For skills you have proficiency in, add your Proficiency Bonus to the ability modifier associated with that skill, and note the total. You might also wish to note the modifier for skills you're not proficient in, which is just the relevant ability modifier.\n\n**Passive Perception.** Sometimes your GM will determine whether your character notices something without asking you to make a Wisdom (Perception) check; the GM uses your Passive Perception instead. Passive Perception is a score that reflects a general awareness of your surroundings when you're not actively looking for something. Use this formula to determine your Passive Perception score:\n\n*Passive Perception* = 10 + Wisdom (Perception) check modifier\n\nInclude all modifiers that apply to your Wisdom (Perception) checks. For example, if your character has a Wisdom of 15 and proficiency in the Perception skill, you have a Passive Perception of 14 (10 + 2 for your Wisdom modifier + 2 for proficiency).\n\n**Hit Points.** Your class and Constitution modifier determine your Hit Point maximum at level 1, as shown on the Level 1 Hit Points by Class table.\n\n|Class|Hit Point Maximum|\n|---|---|\n|Barbarian|12 + Con. modifier|\n|Fighter, Paladin, or Ranger|10 + Con. modifier|\n|Bard, Cleric, Druid, Monk, Rogue, or Warlock|8 + Con. modifier|\n| Sorcerer or Wizard| 6 + Con. modifier|\n\nThe character sheet includes room to note your current Hit Points when you take damage, as well as any Temporary Hit Points you might gain. There's also space to track Death Saving Throws.\n\n**Hit Point Dice.** Your class's description tells you the die type of your character's Hit Point Dice (or Hit Dice for short); write this on your character sheet. At level 1, your character has 1 Hit Die. You can spend Hit Dice during a Short Rest to recover Hit Points. Your character sheet also includes space to note how many Hit Dice you've spent.\n\n**Initiative.** Write your Dexterity modifier in the space for Initiative on your character sheet.\n\n**Armor Class.** Without armor or a shield, your base Armor Class is 10 plus your Dexterity modifier. If your starting equipment includes armor or a Shield (or both), calculate your AC using the rules in \"Equipment.\" A class feature might give you a different way to calculate your AC.\n\n**Attacks.** In the Weapons & Damage Cantrips section of the character sheet, write your starting weapons. The attack roll bonus for a weapon with which you have proficiency is one of the following unless a weapon's property says otherwise:\n\n*Melee attack bonus* = Strength modifier + Proficiency Bonus\n\n*Ranged attack bonus* = Dexterity modifier + Proficiency Bonus\n\nLook up the damage and properties of your weapons in \"Equipment.\" You add the same ability modifier you use for attacks with a weapon to your damage rolls with that weapon.\n\n**Spellcasting.** Note both the saving throw DC for your spells and the attack bonus for attacks you make with them, using these formulas:\n\n*Spell save DC* = 8 + spellcasting ability modifier + Proficiency Bonus\n\n*Spell attack bonus* = spellcasting ability modifier + Proficiency Bonus\n\nYour spellcasting ability modifier for a spell is determined by whatever feature gives you the ability to cast the spell.\n\n**Spell Slots, Cantrips, and Prepared Spells.** If your class gives you the Spellcasting or Pact Magic feature, your class features table shows the number of spell slots you have available, how many cantrips you know, and how many spells you can prepare. Choose your cantrips and prepared spells, and note them—along with your number of spell slots—on your character sheet.",
+            "index": 5,
+            "initialHeaderLevel": 2,
+            "document": "srd-2024",
+            "ruleset": "srd-2024_create-your-character"
+          },
+          {
+            "key": "srd-2024_create-your-character_gaining-a-level",
+            "name": "Gaining a Level",
+            "desc": "When you gain a level, follow these steps:\n\n1. **Choose a Class.** Most characters advance in the same class. However, you might decide to gain a level in another class using the rules in the \"Multiclassing\" section.\n2. **Adjust Hit Points and Hit Point Dice.** Each time you gain a level, you gain an additional Hit Die. Roll that die, add your Constitution modifier to the roll, and add the total (minimum of 1) to your Hit Point maximum. Instead of rolling, you can use the fixed value shown in the Fixed Hit Points by Class table.\n\n|Class|Hit Points per Level|\n|---|---|\n|Barbarian|7 + Con. modifier|\n|Fighter, Paladin, or Ranger|6 + Con. modifier|\n|Bard, Cleric, Druid, Monk, Rogue, or Warlock|5 + Con. modifier|\n|Sorcerer or Wizard|4 + Con. modifier|\n\n3. **Record New Class Features.** Look at your class features table in \"Classes\", and note the features you gain at your new level in that class. Make any choices offered by a new feature.\n\n4. **Adjust Proficiency Bonus.** A character's Proficiency Bonus increases at certain levels, as shown in the Character Advancement table and your class features table in \"Classes.\" When your Proficiency Bonus increases, increase all the numbers on your character sheet that include your Proficiency Bonus.\n5. **Adjust Ability Modifiers.** If you choose a feat that increases one or more of your ability scores, your ability modifier also changes if the new score is an even number. When that happens, adjust all the numbers on your character sheet that use that ability modifier. When your Constitution modifier increases by 1, your Hit Point maximum increases by 1 for each level you have attained. For example, if a character reaches level 8 and increases their Constitution score from 17 to 18, the Constitution modifier increases to +4. The character's Hit Point maximum then increases by 8, in addition to the Hit Points gained for reaching level 8.\n\n## Tiers of Play\n\nWith each new level, characters acquire new capabilities that equip them to handle greater challenges. As characters advance in level, the tone of the game also changes, and the stakes of the campaign get higher. It's helpful to think of a character's (and a campaign's) arc in terms of four tiers of play, describing the journey from a level 1 character just beginning an adventuring career to the epic heights of level 20. These tiers don't have any rules associated with them; they point to the fact that the play experience evolves as characters gain levels.\n\n### Tier 1 (Levels 1–4)\n\nIn tier 1, characters are apprentice adventurers, though they are already set apart from the broader populace by virtue of their extraordinary abilities. They learn their starting class features and choose a subclass. The threats they face usually pose a danger to local farmsteads or villages.\n\n### Tier 2 (Levels 5–10)\n\nIn tier 2, characters are full-fledged adventurers. Spellcasters gain iconic spells such as *Fireball*, *Lightning Bolt*, and *Raise Dead*. Most weapon-focused classes gain the ability to make multiple attacks in a round. The characters now face dangers that threaten cities and kingdoms.\n\n### Tier 3 (Levels 11–16)\n\nIn tier 3, characters have reached a level of power that makes them special among adventurers. At level 11, many spellcasters learn reality-altering spells. Other characters gain features that allow them to make more attacks or to do more impressive things with those attacks. These adventurers often confront threats to whole regions.\n\n### Tier 4 (Levels 17–20)\n\nAt tier 4, characters achieve the pinnacle of their class features, becoming heroic archetypes. The fate of the world or even the order of the multiverse might hang in the balance during their adventures.",
+            "index": 6,
+            "initialHeaderLevel": 2,
+            "document": "srd-2024",
+            "ruleset": "srd-2024_create-your-character"
+          },
+          {
+            "key": "srd-2024_create-your-character_starting-at-higher-levels",
+            "name": "Starting at Higher Levels",
+            "desc": "Your GM might start your group's characters at a level higher than 1. It is particularly recommended to start at level 3 if your group is composed of seasoned D&D players.\n\n### Creating Your Character\n\nCreating a higher-level character uses the same character-creation steps outlined in this chapter and the rules for advancing beyond level 1 provided in the \"Level Advancement\" section. You begin with the minimum amount of XP required to reach your starting level. For example, if the GM starts you at level 10, you have 64,000 XP.\n\n### Bonus Feats at Level 20\n\nA GM can use feats as a form of advancement after characters reach level 20 to provide greater power to characters who have no more levels to gain. With this approach, each character gains one feat of their choice for every 30,000 XP the character earns above 355,000 XP. Epic Boon feats are especially appropriate for these bonus feats, but a player can choose any feat for which their level 20 character qualifies.\n\n### Starting Equipment\n\nThe GM decides whether your character starts with more than the standard equipment for a level 1 character, possibly even one or more magic items. The Starting Equipment at Higher Levels table is a guide for the GM.\n\nAlso, check with your GM about what equipment is available for you to buy with your starting money. For example, the firearms described in \"Equipment\" are too expensive for level 1 characters, but they might be available for purchase if your GM allows them.\n\n|Starting Level|Equipment and Money|Magic Items|\n|---|---|---|\n|2–4|Normal starting equipment|1 Common|\n|5–10|500 GP plus 1d10 × 25 GP plus normal starting equipment|1 Common, 1 Uncommon|\n|11–16|5,000 gp plus 1d10 × 250 GP plus normal starting equipment| 2 Common, 3 Uncommon, 1 Rare|\n|17–20|20,000 GP plus 1d10 × 250 GP plus normal starting equipment| 2 Common, 4 Uncommon, 3 Rare, 1 Very Rare|",
+            "index": 7,
+            "initialHeaderLevel": 2,
+            "document": "srd-2024",
+            "ruleset": "srd-2024_create-your-character"
+          }
+        ],
+        "crossreferences": {
+          "to": []
+        }
+      }
+    ]
+  },
+  "https://api.open5e.com/v2/rules/?document__key=srd-2024&limit=2": {
+    "count": 56,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "key": "srd-2024_the-six-abilities_ability-scores",
+        "name": "Ability Scores",
+        "desc": "Each ability has a score from 1 to 20, although some monsters have a score as high as 30. The score represents the magnitude of an ability. The Ability Scores table summarizes what the scores mean.\n\n|Score|Meaning|\n|---|---|\n|1| This is the lowest a score can normally go. If an effect reduces a score to 0, that effect explains what happens. |\n|2–9| This represents a weak capability.|\n|10–11| This represents the human average.|\n|12–19| This represents a strong capability.|\n|20| This is the highest an adventurer's score can go unless a feature says otherwise. |\n|21–29| This represents an extraordinary capability. |\n|30| This is the highest a score can go.|",
+        "index": 1,
+        "initialHeaderLevel": 2,
+        "document": "srd-2024",
+        "ruleset": "srd-2024_the-six-abilities",
+        "crossreferences": {
+          "to": []
+        }
+      },
+      {
+        "key": "srd-2024_d20-tests_ability-checks",
+        "name": "Ability Checks",
+        "desc": "An ability check represents a creature using talent and training to try to overcome a challenge, such as forcing open a stuck door, picking a lock, entertaining a crowd, or deciphering a cipher. The GM and the rules often call for an ability check when a creature attempts something other than an attack that has a chance of meaningful failure. When the outcome is uncertain and narratively interesting, the dice determine the result.\n\n## Ability Modifier\n\nAn ability check is named for the ability modifier it uses: a Strength check, an Intelligence check, and so on. Different ability checks are called for in different situations, depending on which ability is most relevant. See the Ability Check Examples table for examples of each check’s use.\n\n|Ability|Make a Check To …|\n|---|---|\n|Strength|Lift, push, pull, or break something|\n|Dexterity|Move nimbly, quickly, or quietly|\n|Constitution|Push your body beyond normal limits|\n|Intelligence|Reason or remember|\n|Wisdom|Notice things in the environment or in creatures’ behavior|\n|Charisma|Influence, entertain, or deceive|\n\n## Proficiency Bonus\n\nAdd your Proficiency Bonus to an ability check when the GM determines that a skill or tool proficiency is relevant to the check and you have that proficiency. For example, if a rule refers to a Strength (Acrobatics or Athletics) check, you can add your Proficiency Bonus to the check if you have proficiency in the Acrobatics or Athletics skill. See “Proficiency” later in “Playing the Game” for more information about skill and tool proficiencies.\n\n## Difficulty Class\n\nThe Difficulty Class of an ability check represents the task’s difficulty. The more difficult the task, the higher its DC. The rules provide DCs for certain checks, but the GM ultimately sets them. The Typical Difficulty Classes table presents a range of possible DCs for ability checks.\n\nTable: Typical Difficulty Classes\n\n|Task Difficulty|DC|\n|---|---|\n|Very easy|5|\n|Easy|10|\n|Medium|15|\n|Hard|20|\n|Very hard|25|\n|Nearly impossible|30|",
+        "index": 1,
+        "initialHeaderLevel": 3,
+        "document": "srd-2024",
+        "ruleset": "srd-2024_d20-tests",
+        "crossreferences": {
+          "to": []
+        }
+      }
+    ]
+  }
+}

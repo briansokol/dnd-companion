@@ -17,6 +17,7 @@ export const configSchema = z.object({
   WEB_PORT: port,
   MCP_PORT: port,
   MCP_URL: z.url(),
+  OPEN5E_BASE_URL: z.url().default('https://api.open5e.com/v2'),
   RULES_DB_PATH: z.string(),
   GAME_DB_PATH: z.string(),
   DM_PIN: z.string().optional(),
@@ -78,7 +79,8 @@ function readEnvFile(path: string): Vars {
   return parseEnv(readFileSync(path, 'utf8'));
 }
 
-function findWorkspaceRoot(start: string): string {
+/** The nearest directory at or above `start` holding `pnpm-workspace.yaml`, else `start`. */
+export function findWorkspaceRoot(start: string): string {
   let dir = resolve(start);
   while (!existsSync(join(dir, 'pnpm-workspace.yaml'))) {
     const parent = dirname(dir);

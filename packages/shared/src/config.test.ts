@@ -38,6 +38,7 @@ describe('parseConfig', () => {
     const config = parseConfig(REQUIRED);
     expect(config.CHAT_MODEL).toBe('ornith-1.5:35b');
     expect(config.EMBED_MODEL).toBe('nomic-embed-text');
+    expect(config.OPEN5E_BASE_URL).toBe('https://api.open5e.com/v2');
     expect(config.NUM_CTX).toBe(32768);
   });
 
