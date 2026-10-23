@@ -2,6 +2,7 @@ import Database from 'better-sqlite3';
 import { mkdirSync, readFileSync, renameSync, rmSync } from 'node:fs';
 import { dirname } from 'node:path';
 import { z } from 'zod';
+import { buildRulesChunks } from '../search/chunks.js';
 import { buildNameIndex } from '../search/names.js';
 import { DOCUMENT_KEY, fetchAll, type FetchAllOptions, type Open5eRecord } from './open5e.js';
 
@@ -214,6 +215,7 @@ export async function runImport(options: ImportOptions): Promise<ImportResult> {
     if (problems.length > 0)
       throw new Error(`Row counts failed the sanity check:\n  ${problems.join('\n  ')}`);
 
+    buildRulesChunks(db);
     buildNameIndex(db, Object.keys(counts));
     db.exec('CREATE TABLE import_meta (key TEXT PRIMARY KEY, value TEXT NOT NULL)');
     const meta = db.prepare('INSERT INTO import_meta (key, value) VALUES (?, ?)');

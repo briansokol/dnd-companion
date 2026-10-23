@@ -106,6 +106,19 @@ describe('runImport', () => {
     }
   });
 
+  it('writes rules chunks for every rules section and condition', async () => {
+    const { dbPath } = options();
+    await runImport(options({ dbPath }));
+
+    const parents = (kind: string) =>
+      query<{ n: number }>(
+        dbPath,
+        `SELECT COUNT(DISTINCT slug) AS n FROM rules_chunks WHERE kind = '${kind}'`
+      )[0]!.n;
+    expect(parents('rules_sections')).toBe(4);
+    expect(parents('conditions')).toBe(15);
+  });
+
   it('drops magic items from other documents', async () => {
     const { dbPath } = options();
     await runImport(options({ dbPath }));
