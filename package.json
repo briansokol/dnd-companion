@@ -12,7 +12,8 @@
     "test": "pnpm -r test",
     "lint": "prettier --check . && pnpm -r lint",
     "typecheck": "pnpm -r typecheck",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "setup:mac": "./scripts/setup-mac.sh"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
