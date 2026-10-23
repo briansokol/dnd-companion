@@ -10,7 +10,9 @@
     "lint": "eslint .",
     "typecheck": "tsc",
     "test": "vitest run",
-    "data:import": "tsx src/importer/main.ts"
+    "data:import": "tsx src/importer/main.ts",
+    "data:embed": "tsx src/embeddings/main.ts",
+    "data:spotcheck": "tsx src/search/spotcheck.ts"
   },
   "devDependencies": {
     "@types/better-sqlite3": "^9.6.0",
@@ -21,6 +23,7 @@
   "dependencies": {
     "@dnd/shared": "workspace:*",
     "better-sqlite3": "^13.0.3",
+    "sqlite-vec": "^0.1.9",
     "zod": "^4.6.7"
   }
 }

@@ -47,6 +47,8 @@ pnpm lint                   # Prettier check + ESLint in every package
 pnpm typecheck              # tsc / svelte-check in every package
 pnpm format                 # Prettier write
 pnpm data:import            # rebuild data/rules.db from Open5e srd-2024 + data/seed/
+pnpm data:embed             # embed rules chunks via Ollama (rerun after every import; resumable)
+pnpm data:spotcheck         # run the rules-search spot-check questions against rules.db + Ollama
 
 pnpm --filter @dnd/web dev  # one package (@dnd/web, @dnd/mcp, @dnd/shared)
 
