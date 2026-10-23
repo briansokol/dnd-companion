@@ -22,8 +22,6 @@ D&D Companion: a LAN web app a DM uses at the table. MVP answers rules and stat 
 
 ## Layout
 
-Planned (created by issue 1):
-
 ```
 apps/web          SvelteKit (Node adapter): UI, agent loop, WebSocket
 packages/mcp      dnd-mcp: MCP server, internal API, rules.db + game.db
@@ -35,7 +33,24 @@ docs/             architecture, specs, runbooks
 
 ## Commands
 
-Filled in by issue 1. Until then there is no build.
+Node version is pinned in `.nvmrc`; pnpm is pinned in `package.json` (`packageManager`) and provided by corepack.
+
+```sh
+nvm install && nvm use      # first time: installs the pinned Node
+corepack enable             # provides the pinned pnpm
+pnpm install
+
+pnpm dev                    # all packages in watch mode
+pnpm build                  # build every package
+pnpm test                   # Vitest in every package
+pnpm lint                   # Prettier check + ESLint in every package
+pnpm typecheck              # tsc / svelte-check in every package
+pnpm format                 # Prettier write
+
+pnpm --filter @dnd/web dev  # one package (@dnd/web, @dnd/mcp, @dnd/shared)
+```
+
+ESLint and Prettier configs live at the root and cover every package. CI (`.github/workflows/ci.yml`) runs lint, typecheck and test on every PR. pnpm only runs dependency build scripts listed under `allowBuilds` in `pnpm-workspace.yaml`.
 
 ## Environment
 
