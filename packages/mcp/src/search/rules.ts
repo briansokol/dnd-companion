@@ -3,7 +3,7 @@ import { queryPrefix, tableExists, type Embedder } from '../embeddings/embed.js'
 import type { Audience } from '../importer/importer.js';
 
 export interface RuleChunk {
-  kind: 'rules_sections' | 'conditions';
+  kind: 'rules_sections' | 'conditions' | 'glossary';
   slug: string;
   chapter: string;
   section: string;

@@ -9,6 +9,7 @@ import { RULESET_AUDIENCE, runImport, type ImportOptions } from './importer.js';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const SEED_PATH = join(HERE, '../../../../data/seed/conditions-2024.json');
+const GLOSSARY_PATH = join(HERE, '../../../../data/seed/rules-glossary-2024.json');
 
 // Recorded from api.open5e.com with limit=2. Spells span two pages; magicitems has one
 // non-2024 item spliced in, because that endpoint ignores document__key.
@@ -27,6 +28,7 @@ function options(overrides: Partial<ImportOptions> = {}): ImportOptions {
     baseUrl: 'https://api.open5e.com/v2',
     dbPath: join(mkdtempSync(join(tmpdir(), 'dnd-rules-')), 'rules.db'),
     seedPath: SEED_PATH,
+    glossaryPath: GLOSSARY_PATH,
     pageSize: 2,
     fetch: fixtureFetch,
     minimums: {},
@@ -58,8 +60,32 @@ describe('runImport', () => {
       backgrounds: 2,
       feats: 2,
       conditions: 15,
+      glossary: 141,
       rules_sections: 4
     });
+  });
+
+  it('loads the rules glossary with its tag and without the conditions', async () => {
+    const { dbPath } = options();
+    await runImport(options({ dbPath }));
+
+    const [burning] = query<Record<string, unknown>>(
+      dbPath,
+      "SELECT * FROM glossary WHERE slug = 'burning'"
+    );
+    expect(burning).toMatchObject({
+      name: 'Burning',
+      tag: 'Hazard',
+      source: 'srd-2024',
+      audience: 'player'
+    });
+    expect(JSON.parse(burning!.raw_json as string).desc).toMatch(/1d4 Fire damage/);
+    expect(query(dbPath, "SELECT tag FROM glossary WHERE slug = 'grappling'")).toEqual([
+      { tag: null }
+    ]);
+    expect(
+      query(dbPath, 'SELECT slug FROM glossary WHERE slug IN (SELECT slug FROM conditions)')
+    ).toEqual([]);
   });
 
   it('keeps slug, name, source, audience and raw_json on every row', async () => {
@@ -100,13 +126,14 @@ describe('runImport', () => {
       'species',
       'backgrounds',
       'feats',
-      'conditions'
+      'conditions',
+      'glossary'
     ]) {
       expect(audiences(table)).toEqual(['player']);
     }
   });
 
-  it('writes rules chunks for every rules section and condition', async () => {
+  it('writes rules chunks for every rules section, condition and glossary entry', async () => {
     const { dbPath } = options();
     await runImport(options({ dbPath }));
 
@@ -117,6 +144,7 @@ describe('runImport', () => {
       )[0]!.n;
     expect(parents('rules_sections')).toBe(4);
     expect(parents('conditions')).toBe(15);
+    expect(parents('glossary')).toBe(141);
   });
 
   it('drops magic items from other documents', async () => {
@@ -221,6 +249,10 @@ describe('runImport', () => {
         kind: 'spells',
         slug: 'acid-arrow',
         match: 'exact'
+      });
+      expect(searchNames(db, 'grappling', { audience: 'player' }).matches[0]).toMatchObject({
+        kind: 'glossary',
+        slug: 'grappling'
       });
     } finally {
       db.close();

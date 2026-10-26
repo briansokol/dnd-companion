@@ -91,6 +91,14 @@ describe('buildRulesChunks', () => {
     conditions: [
       { slug: 'prone', name: 'Prone', desc: 'You are on the ground.' },
       { slug: 'grappled', name: 'Grappled', desc: 'Your Speed is 0 while grappled.' }
+    ],
+    glossary: [
+      { slug: 'burning', name: 'Burning', desc: 'A burning creature takes 1d4 Fire damage.' },
+      {
+        slug: 'stat-block',
+        name: 'Stat Block',
+        desc: [1, 2, 3, 4].map((i) => `**Part ${i}.** ${'s'.repeat(600)}`).join('\n\n')
+      }
     ]
   });
   const chunk = (slug: string) =>
@@ -114,6 +122,22 @@ describe('buildRulesChunks', () => {
       section: 'Prone',
       heading: ''
     });
+  });
+
+  it('writes glossary entries under Rules Glossary, split like rules sections', () => {
+    expect(chunk('burning')).toMatchObject({
+      kind: 'glossary',
+      chapter: 'Rules Glossary',
+      section: 'Burning',
+      heading: '',
+      text: 'A burning creature takes 1d4 Fire damage.',
+      audience: 'player',
+      position: 0
+    });
+    const positions = db
+      .prepare("SELECT position FROM rules_chunks WHERE slug = 'stat-block' ORDER BY position")
+      .all();
+    expect(positions).toEqual([{ position: 0 }, { position: 1 }]);
   });
 
   it('indexes chunks in FTS with stemming', () => {

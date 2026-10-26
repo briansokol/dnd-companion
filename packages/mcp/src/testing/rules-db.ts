@@ -23,6 +23,7 @@ export interface ConditionRow {
 export function rulesDb(rows: {
   sections?: SectionRow[];
   conditions?: ConditionRow[];
+  glossary?: ConditionRow[];
 }): Database.Database {
   const db = new Database(':memory:');
   db.exec(`CREATE TABLE rules_sections (
@@ -30,6 +31,9 @@ export function rulesDb(rows: {
   )`);
   db.exec(
     'CREATE TABLE conditions (slug TEXT, name TEXT, source TEXT, audience TEXT, raw_json TEXT)'
+  );
+  db.exec(
+    'CREATE TABLE glossary (slug TEXT, name TEXT, source TEXT, audience TEXT, tag TEXT, raw_json TEXT)'
   );
   const section = db.prepare('INSERT INTO rules_sections VALUES (?, ?, ?, ?, ?, ?, ?)');
   for (const s of rows.sections ?? []) {
@@ -52,6 +56,10 @@ export function rulesDb(rows: {
       c.audience ?? 'player',
       JSON.stringify({ desc: c.desc })
     );
+  }
+  const entry = db.prepare('INSERT INTO glossary VALUES (?, ?, ?, ?, NULL, ?)');
+  for (const g of rows.glossary ?? []) {
+    entry.run(g.slug, g.name, 'srd-2024', g.audience ?? 'player', JSON.stringify({ desc: g.desc }));
   }
   buildRulesChunks(db);
   return db;
