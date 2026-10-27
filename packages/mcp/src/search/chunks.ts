@@ -95,7 +95,7 @@ interface ParentRow {
   raw_json: string;
 }
 
-/** Creates rules_chunks and rules_chunks_fts from the rules_sections and conditions tables. Returns the chunk count. */
+/** Creates rules_chunks and rules_chunks_fts from the rules_sections, conditions and glossary tables. Returns the chunk count. */
 export function buildRulesChunks(db: Database.Database): number {
   db.exec(`CREATE TABLE rules_chunks (
     id INTEGER PRIMARY KEY,
@@ -128,6 +128,9 @@ export function buildRulesChunks(db: Database.Database): number {
   const conditions = db
     .prepare('SELECT slug, name, source, audience, raw_json FROM conditions')
     .all() as ParentRow[];
+  const glossary = db
+    .prepare('SELECT slug, name, source, audience, raw_json FROM glossary')
+    .all() as ParentRow[];
 
   const insert = db.prepare(`INSERT INTO rules_chunks
     (kind, slug, chapter, section, heading, text, source, audience, position)
@@ -157,6 +160,22 @@ export function buildRulesChunks(db: Database.Database): number {
       if (text === '') continue;
       insert.run('conditions', r.slug, 'Conditions', r.name, '', text, r.source, r.audience, 0);
       count++;
+    }
+    for (const r of glossary) {
+      chunkMarkdown(desc(r)).forEach((p, position) => {
+        insert.run(
+          'glossary',
+          r.slug,
+          'Rules Glossary',
+          r.name,
+          p.heading,
+          p.text,
+          r.source,
+          r.audience,
+          position
+        );
+        count++;
+      });
     }
     db.exec("INSERT INTO rules_chunks_fts(rules_chunks_fts) VALUES ('rebuild')");
   })();

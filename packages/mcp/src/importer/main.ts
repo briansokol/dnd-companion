@@ -11,6 +11,7 @@ const result = await runImport({
   baseUrl: config.OPEN5E_BASE_URL,
   dbPath,
   seedPath: join(root, 'data/seed/conditions-2024.json'),
+  glossaryPath: join(root, 'data/seed/rules-glossary-2024.json'),
   minimums: EXPECTED_MINIMUMS
 });
 

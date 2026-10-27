@@ -34,6 +34,7 @@ export const EXPECTED_MINIMUMS: Partial<Record<TableName, number>> = {
   backgrounds: 4,
   feats: 17,
   conditions: 15,
+  glossary: 141,
   rules_sections: 67
 };
 
@@ -110,10 +111,16 @@ const TABLES = {
   }
 } satisfies Record<string, Table>;
 
-type TableName = keyof typeof TABLES | 'conditions' | 'rules_sections';
+type TableName = keyof typeof TABLES | 'conditions' | 'glossary' | 'rules_sections';
 
 const seedSchema = z.object({
   conditions: z.array(z.object({ slug: z.string(), name: z.string(), desc: z.string() }))
+});
+
+const glossarySchema = z.object({
+  entries: z.array(
+    z.object({ slug: z.string(), name: z.string(), tag: z.string().nullable(), desc: z.string() })
+  )
 });
 
 export interface ImportOptions extends Omit<FetchAllOptions, 'baseUrl'> {
@@ -121,6 +128,8 @@ export interface ImportOptions extends Omit<FetchAllOptions, 'baseUrl'> {
   dbPath: string;
   /** `data/seed/conditions-2024.json`. */
   seedPath: string;
+  /** `data/seed/rules-glossary-2024.json`. */
+  glossaryPath: string;
   rulesetAudience?: Record<string, Audience>;
   /** Fails the import when a table has fewer rows. */
   minimums?: Partial<Record<TableName, number>>;
@@ -132,7 +141,7 @@ export interface ImportResult {
   unmappedRulesets: string[];
 }
 
-/** Rebuilds `rules.db` from Open5e srd-2024 and the conditions seed, replacing it only on success. */
+/** Rebuilds `rules.db` from Open5e srd-2024 and the conditions and glossary seeds, replacing it only on success. */
 export async function runImport(options: ImportOptions): Promise<ImportResult> {
   const fetched = new Map<string, Open5eRecord[]>();
   for (const endpoint of [...Object.values(TABLES).map((t) => t.endpoint), 'rulesets', 'rules']) {
@@ -143,6 +152,7 @@ export async function runImport(options: ImportOptions): Promise<ImportResult> {
     );
   }
   const seed = seedSchema.parse(JSON.parse(readFileSync(options.seedPath, 'utf8')));
+  const glossary = glossarySchema.parse(JSON.parse(readFileSync(options.glossaryPath, 'utf8')));
 
   const tmpPath = `${options.dbPath}.tmp`;
   mkdirSync(dirname(options.dbPath), { recursive: true });
@@ -176,6 +186,18 @@ export async function runImport(options: ImportOptions): Promise<ImportResult> {
         audience: 'player',
         raw: c,
         extra: []
+      }))
+    );
+
+    insert(
+      'glossary',
+      [{ name: 'tag', type: 'TEXT' }],
+      glossary.entries.map((g) => ({
+        slug: g.slug,
+        name: g.name,
+        audience: 'player',
+        raw: g,
+        extra: [g.tag]
       }))
     );
 

@@ -40,5 +40,9 @@
   {
     "question": "How far can we travel in a day?",
     "expected": ["rules_sections:exploration_travel"]
+  },
+  {
+    "question": "How often does a character take damage when on fire?",
+    "expected": ["glossary:burning"]
   }
 ]
