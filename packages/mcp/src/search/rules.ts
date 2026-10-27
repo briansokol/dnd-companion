@@ -32,6 +32,11 @@ export interface RulesSearchOptions {
 const CANDIDATES = 20;
 /** Reciprocal rank fusion constant. */
 const RRF_K = 60;
+/**
+ * Glossary entries a result may hold. Short definitions otherwise crowd out the fuller rules text
+ * they echo; the best one stays as a backup, in its ranked place.
+ */
+const GLOSSARY_SLOTS = 1;
 
 const STOP_WORDS = new Set(
   (
@@ -100,8 +105,23 @@ export async function searchRules(
     });
   add(ftsIds, true);
   add(vecIds ?? [], false);
+  const ids = [...ranked.keys()];
+  const glossary = new Set(
+    ids.length === 0
+      ? []
+      : (
+          db
+            .prepare(
+              `SELECT id FROM rules_chunks
+               WHERE kind = 'glossary' AND id IN (${ids.map(() => '?').join(', ')})`
+            )
+            .all(...ids) as { id: number }[]
+        ).map((r) => r.id)
+  );
+  let glossarySlots = GLOSSARY_SLOTS;
   const top = [...ranked.entries()]
     .sort(([, a], [, b]) => b.score - a.score || a.ftsRank - b.ftsRank)
+    .filter(([id]) => !glossary.has(id) || glossarySlots-- > 0)
     .slice(0, limit);
 
   const get = db.prepare(
