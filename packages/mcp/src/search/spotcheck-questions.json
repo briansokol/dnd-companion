@@ -44,5 +44,10 @@
   {
     "question": "How often does a character take damage when on fire?",
     "expected": ["glossary:burning"]
-  }
+  },
+  {
+    "question": "Does taking damage break my concentration?",
+    "expected": ["glossary:concentration"]
+  },
+  { "question": "How do I escape a grapple?", "expected": ["glossary:grappling"] }
 ]

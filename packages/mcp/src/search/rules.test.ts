@@ -8,7 +8,7 @@ import { fakeEmbedder, rulesDb } from '../testing/rules-db.js';
 import { searchRules, type RulesSearchOptions } from './rules.js';
 
 const MODEL = 'nomic-embed-text';
-const embed = fakeEmbedder(['cover', 'wall', 'fire', 'burn', 'prone', 'grappl']);
+const embed = fakeEmbedder(['cover', 'wall', 'fire', 'burn', 'prone', 'grappl', 'concentrat']);
 
 function fixture(): Database.Database {
   const db = rulesDb({
@@ -52,11 +52,27 @@ function fixture(): Database.Database {
         position: 0,
         audience: 'dm',
         desc: 'Cover cover fire wall cover wall fire cover wall.'
+      },
+      {
+        slug: 'spells_concentration',
+        name: 'Concentration',
+        ruleset: 'spells',
+        position: 3,
+        audience: 'player',
+        desc: 'A wall of fire spell requires concentration to keep the wall going.'
       }
     ],
     conditions: [
       { slug: 'prone', name: 'Prone', desc: 'You are on the ground.' },
       { slug: 'grappled', name: 'Grappled', desc: 'Your Speed is 0 while grappled.' }
+    ],
+    glossary: [
+      {
+        slug: 'concentration',
+        name: 'Concentration',
+        desc: 'Damage can break Concentration. Concentration ends.'
+      },
+      { slug: 'magic', name: 'Magic', desc: 'A long casting needs Concentration, concentration.' }
     ]
   });
   loadVec(db);
@@ -89,6 +105,13 @@ describe('searchRules', () => {
 
   it('ranks a chunk found by both halves above one found by either', async () => {
     expect((await slugs('cover behind a wall'))[0]).toBe('combat_cover');
+  });
+
+  it('keeps one glossary entry, in its ranked place, and fills the rest with rules', async () => {
+    const { chunks } = await search('concentration', { limit: 3 });
+    expect(chunks.filter((c) => c.kind === 'glossary')).toHaveLength(1);
+    expect(chunks[0]?.slug).toBe('concentration');
+    expect(chunks.map((c) => c.slug)).toContain('spells_concentration');
   });
 
   it('never returns dm chunks to players from either half', async () => {
